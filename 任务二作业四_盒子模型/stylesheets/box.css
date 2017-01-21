@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    background-color: #070707;
+    height: 5px;
+    border: 0;
+    margin: 0;
+}
+
+
+/*正常盒子与怪异盒子对比*/
+
+.box_compare_container {
+    background: #E9C59E;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.table_container {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.param {
+    position: relative;
+    left: 10%;
+    font-style: italic;
+    font-weight: bold;
+    color: #FB0687;
+}
+
+table {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid #656062;
+    width: 50%;
+    background: #A1F2F6;
+}
+
+.box_container {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    width: 100%;
+    height: 500px;
+    background: #BDF19F;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid #FC0505;
+    overflow: hidden;
+    background: #F2B105;
+}
+
+.content {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    border: 1px solid #057BF9;
+    background-color: #057BF9;
+}
+
+.content_text {
+    margin: 0;
+    font-weight: bold;
+}
+
+.content_box {
+    box-sizing: content-box;
+}
+
+.border_box {
+    box-sizing: border-box;
+}
+
+
+/*弹性盒子水平分栏*/
+
+.flex_box_horizontal_container {
+    background-color: #B68CB6;
+    padding-bottom: 50px;
+}
+
+.flex_container {
+    position: relative;
+    height: 400px;
+    width: 50%;
+    left: 25%;
+    border: 5px solid #FEC302;
+    /*实现弹性盒子水平分栏*/
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+
+.horizontal {
+    /*实现弹性盒子水平分栏*/
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+
+.div_first {
+    height: 100%;
+    width: 100%;
+    background: #03FD95;
+    border: 1px solid #03FD95;
+    /*所占空间比例为1*/
+    -webkit-flex: 1;
+}
+
+.div_second {
+    height: 100%;
+    width: 100%;
+    background: #D9FA00;
+    border: 1px solid #D9FA00;
+    /*所占空间比例为1*/
+    -webkit-flex: 1;
+}
+
+.div_third {
+    height: 100%;
+    width: 100%;
+    background: #FD4E02;
+    border: 1px solid #FD4E02;
+    /*所占空间比例为1*/
+    -webkit-flex: 1;
+}
+
+
+/*弹性盒子垂直分栏*/
+
+.flex_box_vertical_container {
+    background-color: #99F1D9;
+    padding-bottom: 50px;
+}
+
+.vertical {
+    /*实现弹性盒子水平分栏*/
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+}
+
+
+/*弹性盒子排序*/
+
+.flex_box_order_container {
+    background-color: #CAB97B;
+    padding-bottom: 50px;
+}
+
+.order_param {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    font-style: italic;
+    font-weight: bold;
+    color: #FB0687;
+}
+
+.order_first {
+    /*排序为1*/
+    -webkit-order: 1;
+}
+
+.order_second {
+    /*排序为2*/
+    -webkit-order: 2;
+}
+
+.order_third {
+    /*排序为3*/
+    -webkit-order: 3;
+}
+
+
+/*cloumn分栏*/
+
+.column_division {
+    background-color: #E0A7E7;
+    padding-bottom: 50px;
+}
+
+.col {
+    -webkit-column-count: 2;
+    -webkit-column-rule-style: dashed;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/*旧版弹性盒子居中布局*/
+
+.box_center {
+    background-color: #93BFF6;
+    padding-bottom: 50px;
+}
+
+.box_wrapper {
+    height: 500px;
+    width: 100%;
+    /*盒子居中*/
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.outer_box {
+    width: 500px;
+    height: 500px;
+    background: #F3BE3D;
+    /*图片居中*/
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}

@@ -1,0 +1,117 @@
+body{
+	margin:0;
+	padding:0;
+	background: #FAC469;
+}
+
+/*计算器标题样式*/
+h1{
+	position: relative;
+	top:200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 418px;
+	text-align: center;
+}
+
+/*计算器容器样式*/
+.stage{
+	position: relative;
+	top:200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #D0CDCD;
+	width: 418px;
+	box-shadow: 1px 1px 1px rgba(0,0,0, .29);
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29); 
+}
+
+/*计算器背景色*/
+table{
+	background: #F1F1F1;
+}
+
+/*计算器按钮对齐*/
+td{
+	text-align: center;
+}
+
+/*输出框样式*/
+.output{
+	width: 406px;
+	height: 72px;
+	border: 1px solid #C9E4AF;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px; 
+	background: #C9E4A0;
+	padding-right: 4px;
+	padding-left: 4px;
+	text-align: right;
+	line-height: 72px;
+	font-size: 3em;
+	display: inline-block;
+	overflow: hidden;
+}
+
+/*存储指示样式*/
+.save-indicator{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 4px;
+    top: 55px;
+    visibility: hidden;
+}
+
+/*按键整体样式*/
+.key{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	width: 70px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;  
+ 	box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);  
+    color: #FFFFFF;  
+    cursor: pointer;    
+}
+
+/*功能键样式*/
+.func-key{
+	background: #FA9905;
+}
+
+/*复杂计算键样式*/
+.complex-calc-key{
+	background: #383838;
+}
+
+/*基本计算键样式*/
+.basic-calc-key{
+	background: #999999;
+}
+
+/*数字键样式*/
+.number-key{
+	background: #D0CFCF;
+	color: #383838;
+	font-weight: bold;
+}
+
+/*等号特有样式*/
+.two-rows-key{
+	height: 84px;
+	line-height: 84px;
+}
+
+/*零键特有样式*/
+.two-cols-key{
+	width: 156px;
+    margin-left: -6px;
+    margin-right: -6px;
+}

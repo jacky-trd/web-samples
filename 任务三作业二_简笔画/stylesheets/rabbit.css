@@ -1,0 +1,531 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: gray;
+}
+
+.stage {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+    width: 300px;
+    height: 300px;
+}
+
+
+/*左耳样式*/
+
+.left_ear {
+    position: absolute;
+    left: 39%;
+    top: 8%;
+    height: 63px;
+    width: 25px;
+    border-radius: 16px/31px;
+    background: white;
+    transform: rotate(3deg);
+    border: 2px solid black;
+    /*左耳动画*/
+    animation: animation_left_ear 1s ease-in-out infinite;
+    -webkit-animation: animation_left_ear 1s ease-in-out infinite;
+    -moz-animation: animation_left_ear 1s ease-in-out infinite;
+    -o-animation: animation_left_ear 1s ease-in-out infinite;
+}
+
+@keyframes animation_left_ear {
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(3eg);
+    }
+    75% {
+        transform: rotate(5eg);
+    }
+}
+
+
+/* Safari 和 Chrome */
+
+@-webkit-keyframes animation_left_ear {
+    25% {
+        -webkit-transform: rotate(-5deg);
+    }
+    50% {
+        -webkit-transform: rotate(3eg);
+    }
+    75% {
+        -webkit-transform: rotate(5eg);
+    }
+}
+
+
+/* Firefox */
+
+@-moz-keyframes animation_left_ear {
+    25% {
+        -moz-transform: rotate(-5deg);
+    }
+    50% {
+        -moz-transform: rotate(3eg);
+    }
+    75% {
+        -moz-transform: rotate(5eg);
+    }
+}
+
+
+/* Opera */
+
+@-o-keyframes animation_left_ear {
+    25% {
+        -o-transform: rotate(-5deg);
+    }
+    50% {
+        -o-transform: rotate(3eg);
+    }
+    75% {
+        -o-transform: rotate(5eg);
+    }
+}
+
+
+/*右耳样式*/
+
+.right_ear {
+    position: absolute;
+    left: 59%;
+    top: 7%;
+    height: 63px;
+    width: 25px;
+    border-radius: 16px/31px;
+    background: white;
+    transform: rotate(23deg);
+    border: 2px solid black;
+    /*右耳动画*/
+     animation: animation_right_ear 1s ease-in-out infinite;
+    -webkit-animation: animation_right_ear 1s ease-in-out infinite;
+    -moz-animation: animation_right_ear 1s ease-in-out infinite;
+    -o-animation: animation_right_ear 1s ease-in-out infinite;
+}
+
+@keyframes animation_right_ear {
+    25% {
+        transform: rotate(29deg);
+    }
+    50% {
+        transform: rotate(23eg);
+    }
+    75% {
+        transform: rotate(17eg);
+    }
+}
+
+
+/* Safari 和 Chrome */
+
+@-webkit-keyframes animation_right_ear {
+    25% {
+        -webkit-transform: rotate(29deg);
+    }
+    50% {
+        -webkit-transform: rotate(23eg);
+    }
+    75% {
+        -webkit-transform: rotate(17eg);
+    }
+}
+
+
+/* Firefox */
+
+@-moz-keyframes animation_right_ear {
+    25% {
+        -moz-transform: rotate(29deg);
+    }
+    50% {
+        -moz-transform: rotate(23eg);
+    }
+    75% {
+        -moz-transform: rotate(17eg);
+    }
+}
+
+
+/* Opera */
+
+@-o-keyframes animation_right_ear {
+    25% {
+        -o-transform: rotate(29deg);
+    }
+    50% {
+        -o-transform: rotate(23eg);
+    }
+    75% {
+        -o-transform: rotate(17eg);
+    }
+}
+
+
+/*头部样式*/
+
+.head {
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 18%;
+    width: 127px;
+    height: 100px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 113px 87px 42px 53px;
+}
+
+
+/*蝴蝶结样式*/
+
+.flower {
+    background: #2db4f1;
+    border: 2px solid black;
+}
+
+
+/*蝴蝶结中心样式*/
+
+.flower_middle {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+}
+
+
+/*蝴蝶结两翼样式*/
+
+.flower_wings {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+}
+
+
+/*蝴蝶结左翼样式*/
+
+.flower_wings_left {
+    position: absolute;
+    left: 20%;
+    top: 7%;
+}
+
+
+/*蝴蝶结右翼样式*/
+
+.flower_wings_right {
+    position: absolute;
+    left: 37%;
+    top: 7%;
+}
+
+
+/*眼睛样式*/
+
+.eye {
+    position: relative;
+    top: 35%;
+    width: 16px;
+    height: 26px;
+    background: black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+/*左眼样式*/
+
+.left_eye {
+    float: left;
+    left: 30%;
+    transform: rotate(6deg);
+}
+
+
+/*右眼样式*/
+
+.right_eye {
+    float: right;
+    right: 19%;
+    transform: rotate(-6deg);
+}
+
+
+/*眼球样式*/
+
+.innter_eye {
+    position: relative;
+    top: 30%;
+    left: 35%;
+    height: 6px;
+    width: 6px;
+    background: white;
+    border-radius: 3px;
+}
+
+
+/*脸部样式*/
+
+.face {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: #f3b7e6;
+    border-radius: 7px;
+}
+
+
+/*左脸样式*/
+
+.left_face {
+    left: 29%;
+    top: 51%;
+    transform: rotate(6deg);
+}
+
+
+/*右脸样式*/
+
+.right_face {
+    left: 70%;
+    top: 51%;
+    transform: rotate(-6deg);
+}
+
+
+/*鼻子样式*/
+
+.nose {
+    position: absolute;
+    left: 49%;
+    top: 51%;
+    height: 10px;
+    width: 10px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    transform: rotate(45deg);
+}
+
+
+/*嘴部样式*/
+
+.mouth {
+    position: absolute;
+    left: 53%;
+    top: 64%;
+    width: 0;
+    height: 10px;
+    border-left: 3px solid black;
+}
+
+
+/*身体样式*/
+
+.rabbit_body {
+    position: absolute;
+    left: 32%;
+    top: 43%;
+    width: 125px;
+    height: 96px;
+    border: 2px solid black;
+    border-radius: 105px 123px 30px 31px;
+    background: #efb406;
+}
+
+
+/*左脚样式*/
+
+.left_foot {
+    position: absolute;
+    left: 36%;
+    top: 71%;
+    width: 40px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 2px 2px 15px 15px;
+    background: white;
+}
+
+
+/*右脚样式*/
+
+.right_foot {
+    position: absolute;
+    left: 53%;
+    top: 71%;
+    width: 47px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 2px 2px 15px 15px;
+    background: white;
+}
+
+
+/*左臂样式*/
+
+.left_arm {
+    position: absolute;
+    left: 29%;
+    top: 51%;
+    width: 21px;
+    height: 52px;
+    border: 2px solid black;
+    border-radius: 18px/34px;
+    background: white;
+    transform: rotate(15deg);
+    /*左臂动画*/
+    animation: animation_left_arm 1s ease-in-out infinite;
+    -webkit-animation: animation_left_arm 1s ease-in-out infinite;
+    -moz-animation: animation_left_arm 1s ease-in-out infinite;
+    -o-animation: animation_left_arm 1s ease-in-out infinite;
+}
+
+@keyframes animation_left_arm {
+    25% {
+        transform: rotate(21deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    75% {
+        transform: rotate(18deg);
+    }
+}
+
+
+/* Safari 和 Chrome */
+
+@-webkit-keyframes animation_left_arm {
+    25% {
+        -webkit-transform: rotate(21deg);
+    }
+    50% {
+        -webkit-transform: rotate(15deg);
+    }
+    75% {
+        -webkit-transform: rotate(18deg);
+    }
+}
+
+
+/* Firefox */
+
+@-moz-keyframes animation_left_arm {
+    25% {
+        -moz-transform: rotate(21deg);
+    }
+    50% {
+        -moz-transform: rotate(15deg);
+    }
+    75% {
+        -moz-transform: rotate(18deg);
+    }
+}
+
+
+/* Opera */
+
+@-o-keyframes animation_left_arm {
+    25% {
+        -o-transform: rotate(21deg);
+    }
+    50% {
+        -o-transform: rotate(15deg);
+    }
+    75% {
+        -o-transform: rotate(18deg);
+    }
+}
+
+
+/*右臂样式*/
+
+.right_arm {
+    position: absolute;
+    left: 69%;
+    top: 50%;
+    width: 21px;
+    height: 52px;
+    border: 2px solid black;
+    border-radius: 18px/34px;
+    background: white;
+    transform: rotate(-29deg);
+    /*右臂动画*/
+    animation: animation_right_arm 1s ease-in-out infinite;
+    -webkit-animation: animation_right_arm 1s ease-in-out infinite;
+    -moz-animation: animation_right_arm 1s ease-in-out infinite;
+    -o-animation: animation_right_arm 1s ease-in-out infinite;
+}
+
+@keyframes animation_right_arm {
+    from,
+    to {}
+    25% {
+        transform: rotate(-33deg);
+    }
+    50% {
+        transform: rotate(-29deg);
+    }
+    75% {
+        transform: rotate(-31deg);
+    }
+}
+
+
+/* Safari 和 Chrome */
+
+@-webkit-keyframes animation_right_arm {
+    from,
+    to {}
+    25% {
+        -webkit-transform: rotate(-33deg);
+    }
+    50% {
+        -webkit-transform: rotate(-29deg);
+    }
+    75% {
+        -webkit-transform: rotate(-31deg);
+    }
+}
+
+
+/* Firefox */
+
+@-moz-keyframes animation_right_arm {
+    from,
+    to {}
+    25% {
+        -moz-transform: rotate(-33deg);
+    }
+    50% {
+        -moz-transform: rotate(-29deg);
+    }
+    75% {
+        -moz-transform: rotate(-31deg);
+    }
+}
+
+
+/* Opera */
+
+@-o-keyframes animation_right_arm {
+    from,
+    to {}
+    25% {
+        -o-transform: rotate(-33deg);
+    }
+    50% {
+        -o-transform: rotate(-29deg);
+    }
+    75% {
+        -o-transform: rotate(-31deg);
+    }
+}

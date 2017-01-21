@@ -1,0 +1,28 @@
+.navbar {
+    border-radius: 0;
+    background-image: linear-gradient(#689C46, #428C11 60%, #4FA01A);
+}
+
+.navbar-inner {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 30px;
+    height: 60px;
+    text-align: center;
+}
+
+.head-title{
+	color: #FFFFFF;
+}
+
+.column-one{
+	width: 100px;
+}
+
+.column-two{
+	width: 300px;
+}
+
+.column-three{
+	width: 500px;
+}

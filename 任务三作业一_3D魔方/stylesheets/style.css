@@ -1,0 +1,153 @@
+body{
+	margin:0;
+	padding:0;
+	background: #9B9595;
+}
+
+.title{
+	width: 100%;
+	text-align: center;
+	font-size: 60px;
+}
+
+.stage{
+	position: relative;
+	top:200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 306px;
+	height: 306px;
+}
+
+/*动画*/
+.cube{
+	animation:animation 3s ease-in-out infinite;
+	-webkit-animation:animation 3s ease-in-out infinite;
+	-moz-animation:animation 3s ease-in-out infinite;
+	-o-animation:animation 3s ease-in-out infinite;
+	
+	transform-style:preserve-3d;
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	-o-transform-style:preserve-3d;
+
+	transform-origin:153px 153px 0;
+	-webkit-transform-origin:153px 153px 0;
+	-moz-transform-origin:153px 153px 0;
+	-o-transform-origin:153px 153px 0;
+}
+
+@keyframes animation{
+	16%{transform:rotateY(-90deg);}
+	33%{transform:rotateY(-90deg) rotateZ(135deg);}
+	50%{transform:rotateY(225deg) rotateZ(135deg);}
+	66%{transform:rotateY(135deg) rotateZ(135deg);}
+	83%{transform:rotateX(135deg);}
+}
+
+/*chrome和Safri*/
+@-webkit-keyframes animation{
+	16%{-webkit-transform:rotateY(-90deg);}
+	33%{-webkit-transform:rotateY(-90deg) rotateZ(135deg);}
+	50%{-webkit-transform:rotateY(225deg) rotateZ(135deg);}
+	66%{-webkit-transform:rotateY(135deg) rotateZ(135deg);}
+	83%{-webkit-transform:rotateX(135deg);}
+}
+
+/*FF*/
+@-moz-keyframes animation{
+	16%{-moz-transform:rotateY(-90deg);}
+	33%{-moz-transform:rotateY(-90deg) rotateZ(135deg);}
+	50%{-moz-transform:rotateY(225deg) rotateZ(135deg);}
+	66%{-moz-transform:rotateY(135deg) rotateZ(135deg);}
+	83%{-moz-transform:rotateX(135deg);}
+}
+
+/*opera*/
+@-o-keyframes animation{
+	16%{-o-transform:rotateY(-90deg);}
+	33%{-o-transform:rotateY(-90deg) rotateZ(135deg);}
+	50%{-o-transform:rotateY(225deg) rotateZ(135deg);}
+	66%{-o-transform:rotateY(135deg) rotateZ(135deg);}
+	83%{-o-transform:rotateX(135deg);}
+}
+
+.side{
+	position: absolute;
+}
+
+/*平移旋转六个面组成正方体*/
+.side_front{
+	transform:translateZ(153px);
+	-webkit-transform:translateZ(153px);
+	-moz-transform:translateZ(153px);
+	-o-transform:translateZ(153px);
+}
+
+.side_left{
+	transform:rotateX(-90deg) translateZ(153px);
+	-webkit-transform:rotateX(-90deg) translateZ(153px);
+	-moz-transform:rotateX(-90deg) translateZ(153px);
+	-o-transform:rotateX(-90deg) translateZ(153px);
+}
+
+.side_right{
+	transform:rotateX(90deg) translateZ(153px);
+	-webkit-transform:rotateX(90deg) translateZ(153px);
+	-moz-transform:rotateX(90deg) translateZ(153px);
+	-o-transform:rotateX(90deg) translateZ(153px);
+}
+
+.side_top{
+	transform:rotateY(-90deg) translateZ(153px);
+	-webkit-transform:rotateY(-90deg) translateZ(153px);
+	-moz-transform:rotateY(-90deg) translateZ(153px);
+	-o-transform:rotateY(-90deg) translateZ(153px);
+}
+
+.side_bottom{
+	transform:rotateY(90deg) translateZ(153px);
+	-webkit-transform:rotateY(90deg) translateZ(153px);
+	-moz-transform:rotateY(90deg) translateZ(153px);
+	-o-transform:rotateY(90deg) translateZ(153px);
+}
+
+.side_back{
+	transform:translateZ(-153px);
+	-webkit-transform:translateZ(-153px);
+	-moz-transform:translateZ(-153px);
+	-o-transform:translateZ(-153px);
+}
+
+/*每个面9个小方块的样式*/
+.cell{
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #FFFFFF;
+	border-radius: 15px;
+}
+
+.cell_front{
+	background: #FF0000;
+}
+
+.cell_left{
+	background: #FFFF00;
+}
+
+.cell_right{
+	background: #0000FF;
+}
+
+.cell_top{
+	background: #00FFFF;
+}
+
+.cell_bottom{
+	background: #00FF00;
+}
+
+.cell_back{
+	background: #FF00FF;
+}

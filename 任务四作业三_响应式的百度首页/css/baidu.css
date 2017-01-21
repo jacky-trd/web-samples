@@ -1,0 +1,526 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font: 12px arial;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 640px;
+    min-width: 378px;
+    height: 100%;
+}
+
+
+/*头部信息样式*/
+
+header {
+    overflow: hidden;
+}
+
+header nav {
+    position: absolute;
+    width: 400px;
+    float: right;
+    margin-top: 16px;
+    right: 80px;
+    /*IE6，IE7*/
+    *right: 100px;
+}
+
+header nav a {
+    margin-left: 15px;
+    font-size: 13px;
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+header nav a:hover {
+    color: rgb(0, 0, 255);
+}
+
+
+/*以下为头部浮动菜单样式*/
+
+.more,
+.more_out {
+    background: rgb(51, 136, 255);
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin: 15px 0 0 0;
+    right: 10px;
+    display: inline-block;
+    width: 60px;
+    height: 23px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.more p {
+    margin: 0 0 0 0;
+}
+
+.more_out p {
+    margin: 0 0 0 0;
+}
+
+.menu {
+    display: none;
+    background: rgb(240, 240, 240);
+    height: 96%;
+    width: 80px;
+    margin-right: 2px;
+    /*IE6*/
+    _height: 750px;
+}
+
+.more_over .menu {
+    display: block;
+}
+
+.more_over {
+    position: absolute;
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    background: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-right: 2px;
+    height: 96%;
+    width: 80px;
+    right: 0;
+    /*IE6*/
+    _height: 700px;
+}
+
+.more_over p {
+    margin-top: 15px;
+}
+
+hr {
+    position: relative;
+    margin: 0;
+    height: 1px;
+    width: 80%;
+    border: 0;
+    left: 8px;
+    background-color: rgb(225, 225, 225);
+    color: rgb(225, 225, 225);
+    /*IE6，IE7*/
+    *left: 0;
+    /*IE8，IE9，IE10*/
+    left: 0 \9\0;
+}
+
+img.menu_img {
+    position: relative;
+    display: block;
+    left: 20px;
+    margin: 10px 0 0 0;
+    border: 0 none;
+    /*IE6，IE7*/
+    *left: 0;
+}
+
+a.menu_link {
+    position: relative;
+    display: block;
+    color: rgb(102, 102, 102);
+    margin: 10px 0 10px 0;
+}
+
+
+/*主体部分样式*/
+
+.weather {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: none;
+}
+
+.weather:hover {
+    cursor: text;
+}
+
+.login_link {
+    position: absolute;
+    top: 10px;
+    right: 52px;
+    display: none;
+}
+
+.skin_link {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    display: none;
+}
+
+.content {
+    text-align: center;
+    padding-top: 12%;
+}
+
+.content img.logo {
+    width: 270px;
+    height: 129px;
+    padding-bottom: 20px;
+}
+
+.content img.logo_sm_screen {
+    display: none;
+}
+
+.content input {
+    width: 510px;
+    height: 32px;
+    line-height: 32px;
+    outline: none;
+    margin-right: 0;
+    border-top: 1px solid #b6b6b6;
+    border-left: 1px solid #b6b6b6;
+    border-bottom: 1px solid #b6b6b6;
+    padding-left: 7px;
+    padding-right: 30px;
+    /*IE6，IE7*/
+    *position: relative;
+    *top: -15px;
+}
+
+.camera {
+    position: relative;
+    z-index: 1;
+    top: 5px;
+    height: 16px;
+    width: 18px;
+    left: -30px;
+    background: red;
+    top: 5px;
+    /*IE6，IE7*/
+    *top: -20px;
+}
+
+.camera:hover {
+    cursor: pointer;
+}
+
+.content input:hover {
+    border-top: 1px solid #9f9f9f;
+    border-left: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+    outline: none;
+}
+
+.content input:focus {
+    border-top: 1px solid rgb(71, 145, 255);
+    border-left: 1px solid rgb(71, 145, 255);
+    border-bottom: 1px solid rgb(71, 145, 255);
+    outline: none;
+}
+
+.content button {
+    position: relative;
+    width: 100px;
+    height: 36px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: rgb(51, 136, 255);
+    outline: medium;
+    cursor: pointer;
+    border: 0;
+    top: 1px;
+    margin-left: -26px;
+    /*IE6，IE7*/
+    *top: -15px;
+    *margin-left: -22px;
+    /*IE8，IE9，IE10*/
+    top: 2px \9\0;
+}
+
+.mobiel_bar {
+    position: relative;
+    top: 18px;
+    width: 100%;
+    display: none;
+    margin: auto;
+}
+
+.mobile_bar_link {
+    display: inline-block;
+    text-align: center;
+    width: 28px;
+    text-decoration: none;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.mobile_link_wrapper {
+    display: inline-block;
+    width: 16%;
+}
+
+.mobile_bar_icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+    background: url(../img/ns_diff_color_v2.png) no-repeat;
+    background-size: 22px auto;
+}
+
+.icon_focus {
+    background-position: 0 -264px;
+}
+
+.icon_news {
+    background-position: 0 -396px;
+}
+
+.icon_novel {
+    background-position: 0 -330px;
+}
+
+.icon_video {
+    background-position: 0 -462px;
+}
+
+.icon_rice {
+    background-position: 0 -418px;
+}
+
+.icon_map {
+    background-position: 0 -308px;
+}
+
+.mobile_bar_text {
+    display: block;
+    height: 13px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 1;
+    color: #666;
+}
+
+.mobile_news_list {
+    position: relative;
+    top: 33px;
+    background: #FFFFFF;
+    margin: auto;
+    display: none;
+    width: 94%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.news {
+    position: relative;
+}
+
+.news_text_top {
+    display: block;
+    font-weight: normal;
+    color: #333;
+    font-size: 18px;
+    line-height: 26px;
+    overflow: hidden;
+}
+
+.news_image_wrapper {
+    margin: auto;
+    width: 96%;
+    margin-left: 22px;
+}
+
+.news_image {
+    display: inline-block;
+    width: 32%;
+}
+
+.news_text_bottom {
+    display: block;
+    font-size: 13px;
+    color: #999;
+}
+
+.news_text_wrapper {
+    margin: auto;
+    width: 93%;
+    text-align: left;
+}
+
+.hr_line {
+    border-top: 1px solid #eee;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+
+/*底部信息样式*/
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+}
+
+footer div {
+    text-align: center;
+}
+
+table.footer_table {
+    color: #9f9f9f;
+    margin: auto;
+}
+
+table.sm_footer_table {
+    margin: auto;
+    display: none;
+}
+
+table.footer_table a {
+    color: #9f9f9f;
+    margin-right: -6px;
+}
+
+.footer_table_a {
+    margin-left: 30px;
+}
+
+.footer_table_font {
+    font-weight: bold;
+    color: #6f6f6f;
+}
+
+.footer_lable_code {
+    line-height: 2em;
+}
+
+.footer_label_feedback {
+    margin-left: 30px;
+    line-height: 2em;
+    margin-right: -3px;
+}
+
+.footer_icon_feedback {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.footer_table_td {
+    text-align: left;
+}
+
+.footer_icon_security {
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.user_feedback_icon {
+    width: 16px;
+    height: 16px;
+}
+
+.sm_footer_table a {
+    text-decoration: none;
+}
+
+.user_feedback_text {
+    position: relative;
+    top: -4px;
+}
+
+.user_feedback_link {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.foot_wrapper {
+    background: #f8f8f8;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/*响应式布局*/
+
+
+/*平板*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: #f8f8f8;
+    }
+    footer {
+        bottom: 20px;
+    }
+    .weather {
+        display: block;
+    }
+    .login_link {
+        display: inline-block;
+    }
+    .skin_link {
+        display: inline-block;
+    }
+    .large_screen {
+        display: none;
+    }
+    .content input {
+        width: 70%;
+        height: 42px;
+    }
+    .content button {
+        width: 18%;
+        height: 46px;
+    }
+    table:not(.sm_footer_table) {
+        display: none;
+    }
+    table.sm_footer_table {
+        display: inline-table;
+    }
+    .sm_footer_table td {
+        width: 220px;
+    }
+    .mobiel_bar {
+        display: block;
+    }
+    .content img.logo {
+        display: none;
+    }
+    .content img.logo_sm_screen {
+        display: block;
+        width: 181px;
+        height: 57px;
+        margin: auto;
+    }
+    .mobile_news_list {
+        display: block;
+    }
+}
+
+
+/*手机*/
+
+@media only screen and (max-width: 425px) {
+    .content input {
+        width: 60%;
+    }
+    .content button {
+        width: 25%;
+    }
+}

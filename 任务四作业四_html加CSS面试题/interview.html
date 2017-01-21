@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML和CSS面试题</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navbar navbar-default">
+            <div class="navbar-inner">
+                <h1 class="head-title">HTML和CSS面试题</h1>
+            </div>
+        </div>
+        <div class="box-content">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th class="column-one">题目编号#</th>
+                        <th class="column-two">题目内容</th>
+                        <th class="column-three">答案与分析</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>您有没有关注过HTML5和CSS3？如有请简单说一下您对它们的了解情况。</td>
+                        <td>
+                            HTML5和CSS3不仅是两项新的Web技术标准，而且代表了下一代HTML和CSS技术。其未来的发展前景已经可以预见，那就是HTML5必将被越来越多的Web开发人员所使用。各大主流浏览器厂家已经积极更新自己的产品，以更好地支持HTML5。它的优势主要有以下几点：
+                            <br/>（1）更多的描述性标签：HTML5引入非常多的描述性标签。
+                            <br/>（2）良好的多媒体支持：对于先前以插件的方式播放音频、视频带来的麻烦，HTML5有了解决方案，audio标签和video标签能够方便地实现应变。
+                            <br/>（3）更强大的Web应用：HTML5提供了令人称奇的功能，在某些情况下，你甚至可以完全放弃使用第三方技术。
+                            <br/>（4）跨文档消息通信：Web浏览器会组织不同域间的脚本交互或影响，但是对于可信任的脚本或许就是麻烦。HTML5引入了一套安全且易于实现的应对方案。
+                            <br/>（5）Web Sockets：HTML5提供了对Web Sockets的支持。
+                            <br/>（6）客户端存储：HTML5的Web Storage和Web SQL Database API，可以在浏览器中构建Web应用的客户端持久化数据。
+                            <br/>（7）更加精美的界面：HTML5+CSS3组合渲染出来的界面效果更加精美。
+                            <br/>（8）更强大的表单：HTML5提供了功能更加强大的表单界面控件，使用非常方便。
+                            <br/>（9）提升可访问性：内容更加清晰，使用户的操作更加简单方便，提升用户体验。
+                            <br/>（10）先进的选择器：CSS3选择器可以方便地识别出表格的奇偶行、复选框等，代码标记更少。
+                            <br/>（11）视觉效果：具有精美的界面，有阴影、渐变、圆角、旋转等视觉效果。
+                            <br/>CSS3是CSS技术的升级版本，CSS3语言开发是朝着模块化发展的。作为一个模块，以前的规范太庞大，而且比较复杂，所以，把它分解为一些小的模块，使更多新的模块被加进来。这些模块包括：盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>如果把HTML5看成一个开放平台，那它的构建模块有哪些？</td>
+                        <td>
+                            如果把HTML5看成一个开放平台，它的构建模块至少应该包括以下几个：&lt;nav&gt;、&lt;header&gt;、&lt;section&gt;、&lt;footer&gt;。
+                            <br/>&lt;nav&gt;标签用来将具有导航性质的链接划分在一起，使代码结构在语义化方面更加准确。
+                            <br/>&lt;header&gt;标签用来定义文档的页眉（介绍信息）
+                            <br/>&lt;section&gt;标签用来描述文档的结构
+                            <br/>&lt;footer&gt;标签用来定义section或document的页脚。在典型情况下，在元素会包含创作者的姓名、文档的创作日期及联系信息。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>HTML标记&lt;pre&gt;...&lt;/pre&gt;表示________</td>
+                        <td>
+                            &lt;pre&gt;是预格式化标记，被包围在pre元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>HTML5不支持下面哪个元素（）
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;p&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;ins&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;menu&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;font&gt;
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            答案：D&nbsp;&nbsp;解析：&lt;font&gt;标签规定文本的字体外观、字体尺寸和字体颜色。在HTML5中不使用该元素而使用CSS向元素添加样式。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>HTML5不支持下面哪个元素（）
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;cite&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;acronym&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;abbr&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;hase&gt;
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            答案：B&nbsp;&nbsp;解析：&lt;acronym&gt;标签定义首字母缩写，比如“NASA”，通过对首字母缩写进行标记，您就能够为浏览器、拼写检查程序、翻译系统，以及搜索引擎分度器提供有用的信息。在HTML5中不支持&lt;acronym&gt;，而使用&lt;abbr&gt;代替。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>在HTML5中，哪个元素用于组合标题元素（）
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;group&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;header&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;heading&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;hgroup&gt;
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            答案：D&nbsp;&nbsp;解析：&lt;hgroup&gt;标签用于对网页或区段（section）的标题进行组合。&lt;group&gt;将一组元素声明归在一起，以便将它们作为一个组合并到复杂类型定义中。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>哪个HTML5元素用于显示已知范围内的标量测量（）
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;gauge&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;range&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;measure&gt;
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> &lt;meter&gt;
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            答案：D&nbsp;&nbsp;解析：&lt;meter&gt;标签定义度量衡。仅用与已知最大和最小值的度量。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>描述一下section、article、nav、footer这几个HTML5的标签定义。</td>
+                        <td>
+                            &lt;section&gt;标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其它部分。
+                            <br/>&lt;article&gt;标签定义外部的内容。外部内容可以来自一个外部的新闻提供者的一篇新的文章，或者来自blog的文本，或者来自论坛的文本，亦或来自其它外部源内容。
+                            <br/>&lt;nav&gt;标签用来定义导航链接的部分。
+                            <br/>&lt;footer&gt;标签用来定义section或document的页脚。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>CSS3有哪些内容，请至少说出5个。</td>
+                        <td>
+                            （1）CSS3圆角表格，对应属性：border-radius；
+                            <br/>（2）以往对网页上的文字叫特效只能用filter属性，但是在CSS3中专门制订了一个叫文字特效的属性，而且不止加阴影这种效果。对应属性：font-effect；
+                            <br/>（3）丰富了链接下划线的样式，以往的下划线都是直线，现在有了波浪线、点线、虚线等，更可以对下划线的颜色和位置进行任意改变（还有对应顶线和中横线的样式，效果与下划线类似）。对应属性：text-underline-style；text-underline-color；text-underline-mode；text-underline-position；
+                            <br/>（4）在文字下画几个点或打个圈以示重点，CSS3也开始加入了这项功能，这应该在某些特定网页上很有用。对应属性：font-emphasize-style；font-emphasize-position；
+                            <br/>（5）Font-face可以用来加载字体样式，而且它还能够加载服务器端的字体文件，显示客户端没有安装的字体。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>HTML5有哪些新内容，请至少说出4个。</td>
+                        <td>
+                            HTML5增加了不少新标签和新属性，能使页面更优化，代码更简洁。例如：
+                            <br/>（1）HTML5已经确定引入canvas标签，通过canvas，用户可以动态地生成各种图形图像、图表及动画。canvas标签还能够配合js利用键盘来控制图形图像。
+                            <br/>（2）在HTML5中包含Web Form 2.0，用来描绘如何进行页面表格操作。其中最大的特点就是“表格确认”。当前，开发者通常使用js（客户端）和PHP（服务端）代码来确认输入的内容。
+                            <br/>（3）在HTML中为新元素和现有的元素提供更多的API，旨在改进页面程序开发和增加HTML4所缺乏的特性。比如，一个视频和音频方面的API将与&lt;audio&gt;和&lt;video&gt;元素一起使用，它将提供视频和音频回放功能，而无需依赖第三方程序，比如Flash。
+                            <br/>（4）HTML5中的User Interaction用来描述页面内容交互工作的新方式。它的content editable属性可以让开发者决定，页面哪部分内容允许进行用户更改，这对于wiki类的网站更为有用。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>HTML5新增的语义化标签有哪些？</td>
+                        <td>
+                            HTML5新增的语义化标签有很多，比如：
+                            <br/>（1）&lt;article&gt;标签定义外部的内容，可以是一篇新的文章。
+                            <br/>（2）&lt;aside&gt;标签定义article以外的内容，aside的内容可以用作文章的侧栏。
+                            <br/>（3）&lt;fig caption&gt;标签定义figure元素的标题。
+                            <br/>（4）&lt;figure&gt;标签用于对元素进行组合，使用fig caption元素为元素组添加标题。
+                            <br/>（5）&lt;footer&gt;标签定义section或文档的页脚。
+                            <br/>（6）&lt;header&gt;标签定义文档的页眉。
+                            <br/>（7）&lt;hgroup&gt;标签用于对section或网页的标题进行组合，使用fig caption元素为元素组添加标题。
+                            <br/>（8）&lt;nav&gt;标签定义导航的链接部分。
+                            <br/>（9）&lt;section&gt;标签定义文档中的节（section，区段）。比如文章、页眉、页脚或者文档中的其它部分。
+                            <br/>（10）&lt;time&gt;标签定义日期或者时间。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>请用代码写出&lt;video&gt;标签的用法</td>
+                        <td>
+                            HTML5的video标签是HTML5的一大特色，它有以下几种方法。
+                            <br/>方法一:&lt;video&nbsp;src=&quot;test.mp4&quot;&gt;您的浏览器不支持video标签&lt;/video&gt;
+                            <br/>方法二:&lt;video&gt;&lt;source&nbsp;src=&quot;test.3gp&quot;&gt;您的浏览器不支持video标签&lt;/video&gt;
+                            <br/>因为现阶段不同的浏览器支持的视频格式是不同的，当我们有多种格式的视频样式时，我们会用第二种写法来做兼容调试。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>说说弹性盒布局</td>
+                        <td>
+                            引入弹性盒布局模型的目的是提供一种更加有效地方式来对一个容器中的条目进行排列、对齐、和分配空白空间。即便容器中条目的尺寸未知或者是动态变化的，弹性盒模型也能正常工作。在该布局模型中，容器会根据布局的需要，调整其中包含的条目的尺寸和顺序来最好地填充所有可用的空间。当容器的尺寸由于屏幕大小或者窗口尺寸发生变化时，其中包含的条目也会自动的被调整。比如，当容器尺寸变大时，其中包含的条目会拉伸以占满多余的空白空间；当容器尺寸变小时，条目会缩小以防止超出容器的范围。弹性盒布局是与方向无关的。在传统的布局方式中，block布局是把块在垂直方向从上到下依次排列的；而inline布局则是在水平方向来排列的。弹性盒布局并没有这样内在的方向限制，可以由开发人员自由操作。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>请写出可以实现上传且只能上传图片的标签</td>
+                        <td>
+                            &lt;input&nbsp;type=&quot;file&quot;&nbsp;name=&quot;uploadFile&quot;/&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>你知道哪几个响应式框架</td>
+                        <td>
+                            响应式Web设计的运用越来越广泛。因此，作为一名Web开发人员和前端设计师，我们有必要了解更多的有关响应式设计的工具和资源，使其更容易为我们创建响应式的Web站点。
+                            <br/>（1）Titan Framework
+                            <br/>（2）Responsive Grid System
+                            <br/>（3）Ingrid
+                            <br/>（4）Gumby
+                            <br/>（5）Susy：Responsive grids for Compass
+                            <br/>（6）Responsive Grid System
+                            <br/>（7）Foundation 3
+                            <br/>（8）Less+Framework
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>你如何对网站的文件和资源进行优化？</td>
+                        <td>
+                            （1）文件合并
+                            <br/>（2）文件最小化/文件压缩
+                            <br/>（3）使用CDN托管
+                            <br/>（4）缓存的使用
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>你如何对网站的文件和资源进行优化？</td>
+                        <td>
+                            （1）文件合并
+                            <br/>（2）文件最小化/文件压缩
+                            <br/>（3）使用CDN托管
+                            <br/>（4）缓存的使用
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</td>
+                        <td>
+                            （1）CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，比如div默认display属性值为&quot;block&quot;，成为&quot;块级&quot;元素；span默认display属性值为&quot;inline&quot;，是&quot;行内&quot;元素。
+                            <br/>（2）行内元素有：a b span img input select strong（强调的语气） 块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
+                            <br/>（3）知名的空元素： &lt;br&gt;&nbsp; &lt;hr&gt;&nbsp; &lt;img&gt;&nbsp; &lt;input&gt;&nbsp; &lt;link&gt;&nbsp; &lt;meta&gt;&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>link和@import的区别是？</td>
+                        <td>
+                            （1）link属于XHTML标签，而@import是CSS提供的;
+                            <br/>（2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
+                            <br/>（3）import只在IE5以上才能识别，而link是XHTML标签，无兼容问题;
+                            <br/>（4）link方式的样式的权重高于@import的权重.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>HTML5的离线储存？</td>
+                        <td>
+                            （1）localStorage：长期存储数据，浏览器关闭后数据不丢失；
+                            <br/>（2）sessionStorage：数据在浏览器关闭后自动删除。
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

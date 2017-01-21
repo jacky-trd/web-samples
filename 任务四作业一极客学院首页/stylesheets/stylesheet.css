@@ -1,0 +1,2382 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+}
+
+html {
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+body {
+    min-width: 985px;
+}
+
+
+/*头部样式*/
+
+.head {
+    height: 58px;
+    width: 985px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    height: 1948px;
+    background: #F7F7F7;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.foot {
+    position: relative;
+    height: 298px;
+    width: 985px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo_link {
+    position: relative;
+    top: 9px;
+}
+
+.logo_img {
+    height: 40px;
+    width: 109px;
+    border: none;
+}
+
+.navigation {
+    position: relative;
+    top: -23px;
+    left: 168px;
+    width: 815px;
+}
+
+.nav_link {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #35B558;
+}
+
+.nav_span {
+    position: absolute;
+    font-size: 0.9rem;
+}
+
+.nav_span:hover {
+    cursor: pointer;
+}
+
+.nav_span_lessons {
+    left: 80px;
+}
+
+.nav_span_vip {
+    left: 200px;
+}
+
+.nav_span_group {
+    left: 320px;
+}
+
+.nav_span_icons {
+    position: absolute;
+    left: 702px;
+}
+
+.nav_icon {
+    width: 17px;
+    height: 17px;
+}
+
+.app_icon {
+    margin-right: 22px;
+}
+
+.app_icon:hover {
+    cursor: pointer;
+}
+
+.search_icon {
+    margin-right: 22px;
+}
+
+.search_icon:hover {
+    cursor: pointer;
+}
+
+.login_icon:hover {
+    cursor: pointer;
+}
+
+.nav_icon_menu {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.nav_app_menu {
+    top: 0;
+    left: 45px;
+}
+
+.nav_login_menu {
+    top: 0;
+    left: 87px;
+}
+
+.scan_menu_extra {
+    position: relative;
+    top: 12px;
+    left: -8px;
+    height: 30px;
+    width: 30px;
+    background: #FFFFFF;
+    border: 1px solid #F7F7F7;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    display: none;
+}
+
+.login_menu_extra {
+    position: relative;
+    top: 13px;
+    left: -8px;
+    height: 30px;
+    width: 30px;
+    background: #FFFFFF;
+    border: 1px solid #F7F7F7;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    display: none;
+}
+
+.scan_menu {
+    position: relative;
+    top: -13px;
+    left: -65px;
+    background: #FFFFFF;
+    display: none;
+    z-index: 10;
+    width: 128px;
+    height: 155px;
+}
+
+.login_menu {
+    position: relative;
+    top: -13px;
+    left: -90px;
+    background: #FFFFFF;
+    display: none;
+    width: 118px;
+    height: 182px;
+    z-index: 10;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    overflow: hidden;
+}
+
+.scan_image {
+    width: 128px;
+    height: 155px;
+}
+
+.nav_icon_menu:hover .scan_menu {
+    display: block;
+    cursor: pointer;
+}
+
+.nav_icon_menu:hover .scan_menu_extra {
+    display: block;
+    cursor: pointer;
+}
+
+.nav_icon_menu:hover .login_menu {
+    display: block;
+    cursor: pointer;
+}
+
+.nav_icon_menu:hover .login_menu_extra {
+    display: block;
+    cursor: pointer;
+}
+
+.arrow_icon {
+    position: relative;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border: 1px solid #C4C4C4;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    left: 5px;
+    top: -2px;
+    border-top: none;
+    border-left: none;
+}
+
+.nav_span:hover .arrow_icon {
+    animation: animation_arrow_rotation 1s linear forwards;
+    -webkit-animation: animation_arrow_rotation 1s linear forwards;
+    -moz-animation: animation_arrow_rotation 1s linear forwards;
+    -o-animation: animation_arrow_rotation 1s linear forwards;
+}
+
+@keyframes animation_arrow_rotation {
+    15% {
+        transform: rotate(165deg);
+    }
+    30% {
+        transform: rotate(330deg);
+    }
+    45% {
+        transform: rotate(495deg);
+    }
+    100% {
+        transform: rotate(585deg);
+    }
+}
+
+
+/* Safari 和 Chrome */
+
+@-webkit-keyframes animation_arrow_rotation {
+    15% {
+        -webkit-transform: rotate(165deg);
+    }
+    30% {
+        -webkit-transform: rotate(330deg);
+    }
+    45% {
+        -webkit-transform: rotate(495deg);
+    }
+    100% {
+        -webkit-transform: rotate(585deg);
+    }
+}
+
+
+/* Firefox */
+
+@-moz-keyframes animation_arrow_rotation {
+    15% {
+        -moz-transform: rotate(165deg);
+    }
+    30% {
+        -moz-transform: rotate(330deg);
+    }
+    45% {
+        -moz-transform: rotate(495deg);
+    }
+    100% {
+        -moz-transform: rotate(585deg);
+    }
+}
+
+
+/* Opera */
+
+@-o-keyframes animation_arrow_rotation {
+    15% {
+        -o-transform: rotate(165deg);
+    }
+    30% {
+        -o-transform: rotate(330deg);
+    }
+    45% {
+        -o-transform: rotate(495deg);
+    }
+    100% {
+        -o-transform: rotate(585deg);
+    }
+}
+
+.menu {
+    position: relative;
+    top: 20px;
+    background: #FFFFFF;
+    display: none;
+    z-index: 10;
+}
+
+.menu_lessons {
+    width: 280px;
+    height: 280px;
+}
+
+.menu_vip {
+    width: 280px;
+    height: 223px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.menu_group {
+    width: 280px;
+    height: 146px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.nav_span:hover .menu {
+    display: block;
+}
+
+.menu_title {
+    background: #F7F7F7;
+    position: relative;
+    padding-left: 10px;
+    top: 10px;
+    height: 28px;
+    line-height: 28px;
+    color: #8F8F8F;
+    font-size: 0.6rem;
+}
+
+.lessons {
+    position: relative;
+    top: 15px;
+    height: 46px;
+    line-height: 46px;
+}
+
+.lessons:hover a {
+    color: #35b558;
+}
+
+.lessons_icon {
+    background: url("../img/allicon_schools.png") 0 0 no-repeat;
+    background-size: 16px 148px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 21px;
+}
+
+.lessons_web_icon {
+    background: url("../img/allicon_lessons.png") 0 0 no-repeat;
+    background-size: 64px 64px;
+    background-position: -15px -27px;
+}
+
+.lessons_python_icon {
+    background-position: -2px -2px;
+}
+
+.lessons_go_icon {
+    position: relative;
+    background-position: -2px -38px;
+}
+
+.lessons_ios_icon {
+    background-position: -2px -82px;
+}
+
+.link_lessons {
+    position: relative;
+    top: -50px;
+    padding-left: 50px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.7rem;
+    display: inline-block;
+    height: 46px;
+    width: 230px;
+}
+
+.vip_menu_lessons {
+    height: 37px;
+    line-height: 37px;
+}
+
+.vip_classes {
+    background: url("../img/allicon_lessons.png") 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 21px;
+}
+
+.vip_class_library {
+    background-position: 0 -13px;
+}
+
+.vip_class_careerpath {
+    background-position: -45px 0;
+}
+
+.vip_class_knowledgesystem {
+    background-position: -30px -13px;
+}
+
+.vip_class_classes {
+    background: url("../img/xlkc.png") 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 12px 12px;
+}
+
+.vip_class_classlabels {
+    background-position: -15px -13px;
+}
+
+.vip_class_vipbuy {
+    background-position: -16px 0;
+}
+
+.vip_lessons_link {
+    position: absolute;
+    left: 0;
+    padding-left: 50px;
+    text-decoration: none;
+    color: #666;
+    font-size: 0.7rem;
+    height: 37px;
+    width: 230px;
+}
+
+.vip_menu_lessons:hover {
+    background: #EEEEEE;
+}
+
+.vip_menu_lessons:hover a {
+    color: #35b558;
+}
+
+.vip_lessons_description {
+    position: absolute;
+    right: 15px;
+    color: #bbb;
+    font-size: 3px;
+}
+
+.group_menu_item {
+    height: 37px;
+    line-height: 37px;
+}
+
+.group_classes {
+    background: url("../img/allicon_lessons.png") 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-left: 21px;
+}
+
+.group_class_qa {
+    background-position: 0 -27px;
+}
+
+.group_class_wiki {
+    background-position: -29px -27px;
+}
+
+.group_class_community {
+    background-position: 0 2px;
+}
+
+.group_class_res {
+    background-position: -30px 0;
+}
+
+.group_lessons_link {
+    position: absolute;
+    left: 0;
+    padding-left: 50px;
+    text-decoration: none;
+    color: #666;
+    font-size: 0.7rem;
+    height: 37px;
+    width: 230px;
+}
+
+.group_menu_item:hover {
+    background: #EEEEEE;
+}
+
+.group_menu_item:hover a {
+    color: #35b558;
+}
+
+.login_menu_item {
+    height: 37px;
+    line-height: 37px;
+}
+
+.login_menu_icon {
+    background: url("../img/allicon_settings.png") 0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 12px;
+    height: 12px;
+    margin-left: 11px;
+    display: inline-block;
+}
+
+.learning_center {
+    background-position: -16px -15px;
+}
+
+.self_page {
+    background-position: -45px -1px;
+}
+
+.message_notify {
+    background-position: -16px -30px;
+}
+
+.account_setting {
+    background-position: -30px -1px;
+}
+
+.login_menu_link {
+    position: absolute;
+    left: 0;
+    padding-left: 34px;
+    text-decoration: none;
+    color: #666;
+    font-size: 0.7rem;
+    height: 37px;
+    width: 230px;
+}
+
+.login_menu_item:hover {
+    background: #EEEEEE;
+}
+
+.login_menu_item:hover .login_menu_link {
+    color: #35b558;
+}
+
+.login_menu_part {
+    position: absolute;
+    display: inline-block;
+    width: 49%;
+    height: 37px;
+}
+
+.login_menu_middle {
+    font-size: 0.7rem;
+    color: #666;
+    left: 58px;
+}
+
+.login_menu_right {
+    left: 60px;
+}
+
+.reg_login {
+    position: absolute;
+    left: 0;
+    padding-left: 17px;
+    text-decoration: none;
+    color: #666;
+    font-size: 0.7rem;
+    height: 37px;
+    width: 230px;
+}
+
+.login_menu_left:hover .reg_link {
+    color: #35b558;
+}
+
+.login_menu_right:hover .login_link {
+    color: #35b558;
+}
+
+
+/*主体部分样式*/
+
+.content_wrapper {
+    position: relative;
+    height: 58px;
+    width: 985px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.animation_box {
+    position: absolute;
+    overflow: hidden;
+    top: 16px;
+    width: 734px;
+    height: 325px;
+}
+
+.image_list {
+    position: relative;
+    width: 3750px;
+    height: 325px;
+    animation: slide_animation 30s linear infinite;
+    -webkit-animation: slide_animation 30s linear infinite;
+    -moz-animation: slide_animation 30s linear infinite;
+    -o-animation: slide_animation 30s linear infinite;
+}
+
+.image_list_extra {
+    position: absolute;
+    top: 0px;
+    left: 735px;
+    width: 750px;
+    height: 325px;
+    animation: slide_animation_extra 30s linear infinite;
+    -webkit-animation: slide_animation_extra 30s linear infinite;
+    -moz-animation: slide_animation_extra 30s linear infinite;
+    -o-animation: slide_animation_extra 30s linear infinite;
+}
+
+.image_list a {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.slide {
+    width: 750px;
+    height: 325px;
+}
+
+@keyframes slide_animation {
+    from {
+        left: 0;
+    }
+    17% {
+        left: 0;
+    }
+    20% {
+        left: -750px;
+    }
+    37% {
+        left: -750px;
+    }
+    40% {
+        left: -1500px;
+    }
+    57% {
+        left: -1500px;
+    }
+    60% {
+        left: -2250px;
+    }
+    77% {
+        left: -2250px;
+    }
+    80% {
+        left: -3000px;
+    }
+    97% {
+        left: -3000px;
+    }
+    100% {
+        left: -3735px;
+    }
+}
+
+@-webkit-keyframes slide_animation {
+    from {
+        left: 0;
+    }
+    17% {
+        left: 0;
+    }
+    20% {
+        left: -750px;
+    }
+    37% {
+        left: -750px;
+    }
+    40% {
+        left: -1500px;
+    }
+    57% {
+        left: -1500px;
+    }
+    60% {
+        left: -2250px;
+    }
+    77% {
+        left: -2250px;
+    }
+    80% {
+        left: -3000px;
+    }
+    97% {
+        left: -3000px;
+    }
+    100% {
+        left: -3735px;
+    }
+}
+
+@-moz-keyframes slide_animation {
+    from {
+        left: 0;
+    }
+    17% {
+        left: 0;
+    }
+    20% {
+        left: -750px;
+    }
+    37% {
+        left: -750px;
+    }
+    40% {
+        left: -1500px;
+    }
+    57% {
+        left: -1500px;
+    }
+    60% {
+        left: -2250px;
+    }
+    77% {
+        left: -2250px;
+    }
+    80% {
+        left: -3000px;
+    }
+    97% {
+        left: -3000px;
+    }
+    100% {
+        left: -3750px;
+    }
+}
+
+@-o-keyframes slide_animation {
+    from {
+        left: 0;
+    }
+    17% {
+        left: 0;
+    }
+    20% {
+        left: -750px;
+    }
+    37% {
+        left: -750px;
+    }
+    40% {
+        left: -1500px;
+    }
+    57% {
+        left: -1500px;
+    }
+    60% {
+        left: -2250px;
+    }
+    77% {
+        left: -2250px;
+    }
+    80% {
+        left: -3000px;
+    }
+    97% {
+        left: -3000px;
+    }
+    100% {
+        left: -3750px;
+    }
+}
+
+@keyframes slide_animation_extra {
+    from {
+        left: 735px;
+    }
+    97% {
+        left: 735px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes slide_animation_extra {
+    from {
+        left: 735px;
+    }
+    97% {
+        left: 735px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@-moz-keyframes slide_animation_extra {
+    from {
+        left: 735px;
+    }
+    97% {
+        left: 735px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@-o-keyframes slide_animation_extra {
+    from {
+        left: 735px;
+    }
+    97% {
+        left: 735px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.index_wrapper {
+    position: absolute;
+    bottom: 15px;
+    margin-left: 330px;
+}
+
+.index {
+    height: 8px;
+    width: 8px;
+    background: #FFFFFF;
+    display: inline-block;
+}
+
+.index:hover {
+    cursor: pointer;
+}
+
+#index_1 {
+    animation: index_1_animation 30s step-end infinite;
+    -webkit-animation: index_1_animation 30s step-end infinite;
+    -moz-animation: index_1_animation 30s step-end infinite;
+    -o-animation: index_1_animation 30s step-end infinite;
+}
+
+#index_2 {
+    animation: index_2_animation 30s step-end infinite;
+    -webkit-animation: index_2_animation 30s step-end infinite;
+    -moz-animation: index_2_animation 30s step-end infinite;
+    -o-animation: index_2_animation 30s step-end infinite;
+}
+
+#index_3 {
+    animation: index_3_animation 30s step-end infinite;
+    -webkit-animation: index_3_animation 30s step-end infinite;
+    -moz-animation: index_3_animation 30s step-end infinite;
+    -o-animation: index_3_animation 30s step-end infinite;
+}
+
+#index_4 {
+    animation: index_4_animation 30s step-end infinite;
+    -webkit-animation: index_4_animation 30s step-end infinite;
+    -moz-animation: index_4_animation 30s step-end infinite;
+    -o-animation: index_4_animation 30s step-end infinite;
+}
+
+#index_5 {
+    animation: index_5_animation 30s step-end infinite;
+    -webkit-animation: index_5_animation 30s step-end infinite;
+    -moz-animation: index_5_animation 30s step-end infinite;
+    -o-animation: index_5_animation 30s step-end infinite;
+}
+
+@keyframes index_1_animation {
+    from,
+    19%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    0% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-webkit-keyframes index_1_animation {
+    from,
+    19%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    0% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-moz-keyframes index_1_animation {
+    from,
+    19%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    0% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-o-keyframes index_1_animation {
+    from,
+    19%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    0% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@keyframes index_2_animation {
+    from,
+    39%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    20% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-webkit-keyframes index_2_animation {
+    from,
+    39%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    20% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-moz-keyframes index_2_animation {
+    from,
+    39%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    20% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-o-keyframes index_2_animation {
+    from,
+    39%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    20% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@keyframes index_3_animation {
+    from,
+    59%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    40% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-webkit-keyframes index_3_animation {
+    from,
+    59%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    40% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-moz-keyframes index_3_animation {
+    from,
+    59%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    40% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-o-keyframes index_3_animation {
+    from,
+    59%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    40% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@keyframes index_4_animation {
+    from,
+    79%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    60% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-webkit-keyframes index_4_animation {
+    from,
+    79%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    60% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-moz-keyframes index_4_animation {
+    from,
+    79%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    60% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-o-keyframes index_4_animation {
+    from,
+    79%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    60% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@keyframes index_5_animation {
+    from,
+    99%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    80% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-webkit-keyframes index_5_animation {
+    from,
+    99%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    80% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-moz-keyframes index_5_animation {
+    from,
+    99%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    80% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+@-o-keyframes index_5_animation {
+    from,
+    99%,
+    to {
+        background-color: rgb(255, 255, 255);
+        height: 8px;
+    }
+    80% {
+        background-color: rgb(0, 255, 0);
+        height: 16px;
+    }
+}
+
+.roll_button {
+    position: absolute;
+    top: 125px;
+    width: 49px;
+    height: 66px;
+    background: #455A8F;
+    opacity: 0;
+}
+
+.right_button {
+    left: 690px;
+}
+
+.roll_button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.arrow {
+    position: absolute;
+    top: 20px;
+    height: 20px;
+    width: 20px;
+    border-left: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.left_arrow {
+    left: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.right_arrow {
+    left: 10px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+}
+
+.login {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 240px;
+    height: 159px;
+    background: #FFFFFF;
+}
+
+.new_version {
+    position: absolute;
+    top: 180px;
+    right: 140px;
+    width: 100px;
+    height: 100px;
+}
+
+.login_image {
+    position: relative;
+    height: 56px;
+    width: 56px;
+    top: 30px;
+    left: 30px;
+}
+
+.welcome {
+    position: relative;
+    font-size: 0.5rem;
+    color: #555;
+}
+
+.welcome_top {
+    left: 38px;
+    top: -7px;
+}
+
+.welcome_below {
+    top: 19px;
+}
+
+.button_login {
+    position: relative;
+    border: 1px solid #35b558;
+    width: 81px;
+    height: 30px;
+    font-size: 14px;
+    color: #35b558;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+}
+
+.login_button {
+    top: 50px;
+    left: 30px;
+}
+
+.reg_button {
+    top: 50px;
+    left: 33px;
+}
+
+.button_login:hover {
+    cursor: pointer;
+    background-color: #35b558;
+    color: #FFFFFF;
+}
+
+.lessons_wrapper {
+    position: relative;
+    top: 358px;
+    height: 124px;
+    width: 985px;
+    background: #FFFFFF;
+}
+
+.lessons_stage {
+    display: inline-block;
+    width: 241px;
+    height: 124px;
+    border-right: 0.5px solid #F7F7F7;
+}
+
+.lessons_link {
+    display: block;
+    width: 241px;
+    height: 124px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.lessons_image {
+    position: relative;
+    top: 20px;
+    width: 123px;
+    height: 62px;
+}
+
+.php_comp_image {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.lessons_text {
+    position: relative;
+    display: block;
+    top: 20px;
+    font-size: 0.5rem;
+    color: #555;
+    transition: all 0.3s ease-in;
+}
+
+.lessons_stage:hover .lessons_text {
+    color: #10BF40;
+}
+
+.lessons_adv_wrapper {
+    position: relative;
+    top: 375px;
+    height: 247px;
+    width: 985px;
+}
+
+.lessons_adv_link {
+    display: block;
+    height: 247px;
+    width: 230px;
+    text-decoration: none;
+}
+
+.lessons_adv_stage {
+    position: relative;
+    display: inline-block;
+    height: 247px;
+    width: 230px;
+    background: #FFFFFF;
+    transition: all 0.3s ease-in;
+}
+
+.lessons_adv_stage:hover {
+    box-shadow: 0px 3px 8px #8C8A8A;
+    -webkit-box-shadow: 0px 3px 8px #8C8A8A;
+    -moz-box-shadow: 0px 3px 8px #8C8A8A;
+    -o-box-shadow: 0px 3px 8px #8C8A8A;
+}
+
+.lessons_adv_stage_first {
+    left: 0;
+}
+
+.lessons_adv_stage_second {
+    left: 16px;
+}
+
+.lessons_adv_stage_third {
+    left: 33px;
+}
+
+.lessons_adv_stage_fourth {
+    left: 48px;
+}
+
+.lessons_adv_image {
+    height: 140px;
+    width: 230px;
+}
+
+.lessons_title_text {
+    position: absolute;
+    top: 155px;
+    left: 12px;
+    font-size: 0.5rem;
+    color: #555;
+}
+
+.lessons_duration_text {
+    position: absolute;
+    top: 193px;
+    left: 12px;
+    font-size: 0.5rem;
+    color: #999;
+}
+
+.vertical_line {
+    position: absolute;
+    display: inline-block;
+    top: 196px;
+    left: 59px;
+    height: 10px;
+    border-left: 1px solid #999;
+}
+
+.lessons_count_text {
+    position: absolute;
+    top: 193px;
+    left: 70px;
+    font-size: 0.5rem;
+    color: #999;
+}
+
+.new_price_text {
+    position: absolute;
+    top: 215px;
+    left: 11px;
+    font-size: 1rem;
+    color: #ff5c00;
+}
+
+.old_price_text {
+    position: absolute;
+    text-decoration: line-through;
+    top: 220px;
+    left: 87px;
+    font-size: 0.5rem;
+    color: #999;
+}
+
+.students_text {
+    position: absolute;
+    top: 219px;
+    left: 166px;
+    font-size: 0.5rem;
+    color: #999;
+}
+
+.career {
+    position: relative;
+    top: 408px;
+}
+
+.section_title {
+    font-size: 18px;
+    color: #555;
+    height: 18px;
+}
+
+.career_school_wrapper {
+    position: relative;
+    top: 428px;
+    width: 985px;
+    height: 259px;
+}
+
+.careen_school {
+    position: absolute;
+    display: inline-block;
+    background-size: cover;
+}
+
+.careen_school_small {
+    width: 236px;
+    height: 123px;
+}
+
+.career_school_web {
+    width: 488px;
+    height: 259px;
+    background-image: url(../img/career_school_html5_bk.jpg);
+}
+
+.web_cover {
+    position: absolute;
+    width: 488px;
+    height: 259px;
+    background: #5B1919;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.career_link:hover .web_cover {
+    opacity: 0.4;
+}
+
+.career_school_python {
+    left: 500px;
+    background-image: url(../img/career_school_python_bk.jpg);
+}
+
+.other_cover {
+    position: absolute;
+    width: 236px;
+    height: 123px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.career_link:hover .other_cover {
+    opacity: 0.4;
+}
+
+.python_cover {
+    background: #3F200B;
+}
+
+.career_school_go {
+    left: 749px;
+    background-image: url(../img/career_school_go_bk.jpg);
+}
+
+.go_cover {
+    background: #083334;
+}
+
+.career_school_ios {
+    top: 136px;
+    left: 500px;
+    background-image: url(../img/career_school_ios_bk.jpg);
+}
+
+.ios_cover {
+    background: #460708;
+}
+
+.career_school_more {
+    top: 136px;
+    left: 749px;
+    background-image: url(../img/career_school_more_bk.jpg);
+}
+
+.career_link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.career_web_link {
+    width: 488px;
+    height: 259px;
+    line-height: 259px;
+}
+
+.career_other_link {
+    width: 236px;
+    height: 123px;
+    line-height: 123px;
+}
+
+.career_web_image {
+    width: 55px;
+    height: 84px;
+    z-index: 10;
+}
+
+.career_other_image {
+    width: 35px;
+    height: 38px;
+}
+
+.career_more_link {
+    cursor: default;
+}
+
+.career_web_text {
+    position: absolute;
+    top: 42px;
+    left: 170px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.career_other_text {
+    position: absolute;
+    top: 40px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.career_pyhton_text {
+    left: 56px;
+}
+
+.career_go_text {
+    left: 69px;
+}
+
+.career_ios_text {
+    left: 82px;
+}
+
+.career_more_text {
+    left: 58px;
+}
+
+.vip_lessons {
+    position: relative;
+    top: 461px;
+}
+
+.vip_lessons_wrapper {
+    position: relative;
+    top: 481px;
+    width: 985px;
+    height: 309px;
+}
+
+.vip_lesson {
+    position: absolute;
+    width: 153px;
+    height: 148px;
+    background: #FFFFFF;
+    transition: all 0.3s ease-in;
+}
+
+.vip_lesson:hover {
+    box-shadow: 0px 3px 10px #CDCDCD;
+    -webkit-box-shadow: 0px 3px 10px #CDCDCD;
+    -moz-box-shadow: 0px 3px 10px #CDCDCD;
+    -o-box-shadow: 0px 3px 10px #CDCDCD;
+}
+
+.vip_android_lesson {
+    top: 0;
+    left: 0;
+}
+
+.vip_ios_lesson {
+    top: 0;
+    left: 165px;
+}
+
+.vip_swift_lesson {
+    top: 0;
+    left: 330px;
+}
+
+.vip_html_lesson {
+    top: 0;
+    left: 495px;
+}
+
+.vip_javascript_lesson {
+    top: 0;
+    left: 660px;
+}
+
+.vip_node_lesson {
+    top: 0;
+    left: 825px;
+}
+
+.vip_c_lesson {
+    top: 161px;
+    left: 0;
+}
+
+.vip_java_lesson {
+    top: 161px;
+    left: 165px;
+}
+
+.vip_php_lesson {
+    top: 161px;
+    left: 330px;
+}
+
+.vip_javaweb_lesson {
+    top: 161px;
+    left: 495px;
+}
+
+.vip_python_lesson {
+    top: 161px;
+    left: 660px;
+}
+
+.vip_cocos_lesson {
+    top: 161px;
+    left: 825px;
+}
+
+.vip_lesson_link {
+    display: block;
+    width: 153px;
+    height: 148px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.vip_lesson_img {
+    position: relative;
+    top: 25px;
+    height: 60px;
+    width: 60px;
+}
+
+.vip_lesson_content {
+    position: absolute;
+    top: 87px;
+    font-size: 12px;
+    color: #555;
+}
+
+.vip_lesson_duration {
+    position: absolute;
+    top: 110px;
+    left: 49px;
+    font-size: 12px;
+    color: #35b558;
+}
+
+.vip_android {
+    left: 52px;
+}
+
+.vip_iOS {
+    left: 65px;
+}
+
+.vip_swift {
+    left: 52px;
+}
+
+.vip_html5 {
+    left: 42px;
+}
+
+.vip_js {
+    left: 46px;
+}
+
+.vip_node {
+    left: 56px;
+}
+
+.vip_c {
+    left: 61px;
+}
+
+.vip_java {
+    left: 48px;
+}
+
+.vip_php {
+    left: 52px;
+}
+
+.vip_javaweb {
+    left: 50px;
+}
+
+.vip_python {
+    left: 56px;
+}
+
+.vip_cocos {
+    left: 21px;
+}
+
+.vip_html_duration {
+    left: 44px
+}
+
+.all_vip_lessons {
+    position: relative;
+    top: 518px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #35b558;
+    width: 116px;
+    height: 30px;
+    font-size: 14px;
+    color: #35b558;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    transition: all 0.3s ease-in;
+}
+
+.all_vip_lessons:hover {
+    cursor: pointer;
+    background-color: #35b558;
+    color: #FFFFFF;
+}
+
+.story_title {
+    position: relative;
+    top: 543px;
+}
+
+.dashboard_wrapper {
+    position: relative;
+    top: 563px;
+    width: 985px;
+    height: 260px;
+    overflow: hidden;
+}
+
+.dashboard {
+    position: absolute;
+    display: inline-block;
+    width: 985px;
+    height: 260px;
+}
+
+.first_dashboard {
+    width: 2955px;
+    animation: first_story_animation 15s linear infinite;
+    -webkit-animation: first_story_animation 15s linear infinite;
+    -moz-animation: slide_animation 15s linear infinite;
+    -o-animation: slide_animation 15s linear infinite;
+}
+
+@keyframes first_story_animation {
+    from {
+        left: 0;
+    }
+    45% {
+        left: 0;
+    }
+    50% {
+        left: -1004px;
+    }
+    95% {
+        left: -1004px;
+    }
+    100% {
+        left: -2008px;
+    }
+}
+
+@-webkit-keyframes first_story_animation {
+    from {
+        left: 0;
+    }
+    45% {
+        left: 0;
+    }
+    50% {
+        left: -1004px;
+    }
+    95% {
+        left: -1004px;
+    }
+    100% {
+        left: -2008px;
+    }
+}
+
+@-moz-keyframes first_story_animation {
+    from {
+        left: 0;
+    }
+    45% {
+        left: 0;
+    }
+    50% {
+        left: -1004px;
+    }
+    95% {
+        left: -1004px;
+    }
+    100% {
+        left: -2008px;
+    }
+}
+
+@-o-keyframes first_story_animation {
+    from {
+        left: 0;
+    }
+    45% {
+        left: 0;
+    }
+    50% {
+        left: -1004px;
+    }
+    95% {
+        left: -1004px;
+    }
+    100% {
+        left: -2008px;
+    }
+}
+
+.story_wrapper {
+    position: relative;
+    display: inline-block;
+    width: 313px;
+    height: 248px;
+}
+
+.zsl {
+    left: 0;
+    top: 0;
+}
+
+.zsl_1 {
+    left: 93px;
+    top: 0;
+}
+
+.zhy {
+    left: 48px;
+    top: 0;
+}
+
+.yf {
+    left: 18px;
+    top: 0;
+}
+
+.yf_1 {
+    left: 109px;
+    top: 0;
+}
+
+.hwj {
+    left: 62px;
+    top: 0;
+}
+
+.lxy {
+    left: 34px;
+    top: 0;
+}
+
+.lxy_1 {
+    left: 125px;
+    top: 0;
+}
+
+.whb {
+    left: 77px;
+    top: 0;
+}
+
+.story {
+    position: absolute;
+    background: #FFFFFF;
+    width: 313px;
+    height: 119px;
+    transition: all 0.3s ease-in;
+}
+
+.story_wrapper:hover .story {
+    box-shadow: 0px 3px 10px #CDCDCD;
+    -webkit-box-shadow: 0px 3px 10px #CDCDCD;
+    -moz-box-shadow: 0px 3px 10px #CDCDCD;
+    -o-box-shadow: 0px 3px 10px #CDCDCD;
+}
+
+.quotation_img {
+    position: relative;
+    width: 14px;
+    height: 10px;
+}
+
+.top_quotation {
+    top: 3px;
+    left: 9px;
+}
+
+.bottom_quotation {
+    top: 74px;
+    left: 290px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.story_content {
+    position: relative;
+    top: 0px;
+    left: 24px;
+    width: 252px;
+    height: 0;
+    text-align: left;
+    font-size: 12px;
+    color: #555;
+}
+
+.student_intro {
+    position: relative;
+    top: 130px;
+    width: 313px;
+    height: 118px;
+}
+
+.profile {
+    position: relative;
+    top: 20px;
+    left: 16px;
+    width: 63px;
+    height: 63px;
+}
+
+.name {
+    position: relative;
+    top: -15px;
+    left: 26px;
+    font-size: 12px;
+    color: #555;
+}
+
+.company {
+    position: relative;
+    top: 10px;
+    left: -14px;
+    color: #999;
+    font-size: 12px;
+}
+
+.triangle {
+    position: absolute;
+    top: 108px;
+    left: 38px;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.story_link {
+    width: 313px;
+    height: 248px;
+    text-decoration: none;
+}
+
+.story_index_wapper {
+    position: relative;
+    width: 24px;
+    height: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 253px;
+}
+
+.story_index {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #35b558;
+}
+
+.first_index {
+    width: 16px;
+    -webkit-animation: story_first_index_animation 15s step-end infinite;
+}
+
+.second_index {
+    left: 26px;
+    background: #bbb;
+    -webkit-animation: story_second_index_animation 15s step-end infinite;
+}
+
+@-webkit-keyframes story_first_index_animation {
+    from {
+        width: 16px;
+        background: #35b558;
+    }
+    45% {
+        width: 16px;
+        background: #35b558;
+    }
+    50% {
+        width: 8px;
+        background: #bbb;
+    }
+    95% {
+        width: 8px;
+        background: #bbb;
+    }
+    100% {
+        width: 16px;
+        background: #35b558;
+    }
+}
+
+@-webkit-keyframes story_second_index_animation {
+    from {
+        width: 8px;
+        background: #bbb;
+        left: 26px;
+    }
+    45% {
+        width: 8px;
+        background: #bbb;
+        left: 26px;
+    }
+    50% {
+        width: 16px;
+        background: #35b558;
+        left: 18px;
+    }
+    95% {
+        width: 16px;
+        background: #35b558;
+        left: 18px;
+    }
+    100% {
+        width: 8px;
+        background: #bbb;
+        left: 26px;
+    }
+}
+
+
+/*右边小工具栏样式*/
+
+.asidebar {
+    position: fixed;
+    width: 34px;
+    height: 102px;
+    margin-left: 510px;
+    left: 50%;
+    bottom: 50px;
+    z-index: 2000;
+}
+
+.gotop {
+    width: 34px;
+    height: 34px;
+    background-image: url(../img/gotop_untouch.jpg);
+    background-size: cover;
+}
+
+.gotop:hover {
+    background-image: url(../img/gotop.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.app_scan {
+    width: 34px;
+    height: 34px;
+    background: rgb(247, 247, 247);
+    border-bottom: 1px solid #e0e0e0;
+    background-image: url(../img/phone_untouch.png);
+    background-size: cover;
+}
+
+.app_scan_menu {
+    display: none;
+    position: absolute;
+    width: 130px;
+    height: 160px;
+    background: #585555;
+    top: -38px;
+    left: -130px;
+    opacity: 0.2;
+}
+
+.app_scan_menu_triangle {
+    display: none;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 45px;
+    left: -17px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    background: #FFFFFF;
+}
+
+.app_scan_img_wrapper {
+    display: none;
+    position: absolute;
+    top: -25px;
+    left: -116px;
+    width: 104px;
+    height: 134px;
+}
+
+.app_scan_img {
+    position: absolute;
+    width: 104px;
+    height: 134px;
+}
+
+.app_scan:hover .app_scan_menu {
+    display: inline-block;
+}
+
+.app_scan:hover .app_scan_menu_triangle {
+    display: inline-block;
+}
+
+.app_scan:hover .app_scan_img_wrapper {
+    display: inline-block;
+}
+
+.app_scan:hover {
+    background-image: url(../img/phone.png);
+    background-size: cover;
+}
+
+.app_scan_link {
+    display: block;
+    width: 34px;
+    height: 34px;
+}
+
+.cell_chat {
+    width: 34px;
+    height: 34px;
+    background-image: url(../img/cell_chat_untouch.jpg);
+    background-size: cover;
+}
+
+.cell_chat:hover {
+    background-image: url(../img/cell_chat.jpg);
+    background-size: cover;
+}
+
+.cell_chat_link {
+    display: block;
+    width: 34px;
+    height: 34px;
+}
+
+
+/*底部样式*/
+
+.foot_logo {
+    position: relative;
+    display: inline-block;
+    top: 25px;
+}
+
+.foot_logo_img {
+    width: 110px;
+    height: 38px;
+}
+
+.foot_logo_belief {
+    position: relative;
+    top: 19px;
+    font-size: 12px;
+    color: #999;
+}
+
+.foot_table {
+    position: relative;
+    top: -34px;
+    left: 198px;
+}
+
+th {
+    font-weight: normal;
+    width: 135px;
+    color: #808080;
+    font-size: 14px;
+}
+
+.table_span {
+    margin-left: -26px;
+}
+
+.last_column {
+    margin-left: -56px;
+}
+
+tr {
+    height: 29px;
+}
+
+.table_link {
+    color: #999999;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 26px;
+}
+
+.table_link:hover {
+    color: #35b558;
+}
+
+.foot_scan {
+    position: absolute;
+    display: inline-block;
+    top: 25px;
+    left: 819px;
+    ;
+}
+
+.foot_scan_phone {
+    color: #808080;
+    font-size: 14px;
+}
+
+.scan_mobile {
+    position: relative;
+    width: 98px;
+    height: 30px;
+    border: 1px solid #eeeeee;
+    line-height: 30px;
+    color: #808080;
+    font-size: 13px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.scan_iphone {
+    top: 21px;
+    background: url(../img/icon-down-ios.png)no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+.scan_mobile_menu {
+    display: none;
+    position: relative;
+    top: -178px;
+    left: -27px;
+    width: 114px;
+    height: 144px;
+    background: url(../img/app.png)no-repeat 0 0;
+    background-size: 114px 144px;
+}
+
+.scan_mobile:hover .scan_menu_rectangle {
+    display: block;
+}
+
+.scan_mobile:hover .scan_mobile_menu {
+    display: block;
+}
+
+.scan_android {
+    top: 30px;
+    background: url(../img/icon-down-and.png)no-repeat 0 0;
+    background-size: 30px 30px;
+}
+
+.foot_line {
+    position: relative;
+    top: -24px;
+    height: 1px;
+    width: 100%;
+    background: #999;
+    opacity: 0.2;
+}
+
+.foot_copyright {
+    position: relative;
+    top: -11px;
+    left: 132px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.foot_copyright_link {
+    text-decoration: none;
+    font-size: 12px;
+    color: #999;
+}
+
+.foot_copyright_link:hover {
+    color: #35b558;
+}
+
+.cert {
+    position: relative;
+    top: 8px;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.cert_img {
+    width: 60px;
+    height: 22px;
+}
+
+.foot_weibo {
+    display: inline-block;
+    position: relative;
+    right: -243px;
+    top: -11px;
+}
+
+.weibo_img {
+    margin-left: 5px;
+    width: 17px;
+    height: 16px;
+}

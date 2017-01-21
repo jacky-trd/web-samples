@@ -1,0 +1,124 @@
+body {
+    background: rgb(13, 119, 146);
+    margin: 0;
+}
+
+ /*最外层边框，包括圆角*/
+.outline {
+    position: relative;
+    width: 800px;
+    height: 100%;
+    left: 50%;
+    margin: 20px 0 20px -400px;
+    background:rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+/*logo*/
+img{
+    margin:10px 0 0 0;
+}
+
+/*头部链接*/
+a.head {
+    font-size: 13px;
+    color: rgb(255, 0, 153);
+}
+
+a.returnlink{
+    color: blue;
+}
+
+a:hover{
+    color: rgb(255, 0, 255);
+}
+
+/*表单*/
+table {
+    width: 90%;
+    margin: 20px 0 40px 40px;
+    font-size: 13px;
+    border-spacing: 0;
+}
+    
+td.links {
+    text-align: right;
+}
+
+div.title {
+    text-align: center;
+    width: 90%;
+    left: 50%;
+    margin: 10px 0 10px 40px;
+    font-weight: bold;
+}
+
+td.descritpion {
+    text-align: center;
+}
+
+td:not(.noborder){
+    border: 1px solid rgb(195, 195, 195);
+}
+
+td.category {
+    background: rgb(238, 238, 238);
+    color: rgb(0, 51, 153);
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 2em;
+}
+
+td.item {
+    text-align: right;
+    width: 22%;
+}
+
+label.choice{
+    font-weight: bold;
+}
+
+td.submit{
+    text-align:center;
+    line-height:8em;
+}
+
+td.bottom{
+    text-align:center;
+}
+
+td.no_top_border{
+    border-top:0;
+}
+
+td.no_bottom_border{
+    border-bottom: 0;
+}
+
+label.content {
+    color: rgb(0, 0, 255);
+}
+
+select{
+    size: 1;
+}
+
+input{
+    margin-left: 2px;
+}
+
+input:not(.not_text){
+    width:50%;
+}
+
+input.submit{
+    width: 15%;
+}
+
+table.multi_choice_content{
+    margin: 5px 0 0 0;
+}
+
+table.multi_choice_content tr{
+    line-height: 1.5em;
+}

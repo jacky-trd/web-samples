@@ -1,0 +1,12 @@
+body {
+    background-color: #663;
+}
+
+td {
+    text-align: center;
+    nowrap；
+}
+
+td.number {
+    width: 18px;
+}

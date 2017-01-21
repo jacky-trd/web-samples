@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 10px;
+    padding: 10px;
+    width: 473px;
+    height: 84px;
+    border: 1px solid #eee;
+}
+
+
+/*结果显示样式*/
+
+.result {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    width: 50px;
+    height: 17px;
+    background: #eee;
+    border: 1px solid #eee;
+}
+
+
+/*计算按钮样式*/
+
+.calc {
+    margin: 20px 0 0 410px;
+    width: 60px;
+    height: 30px;
+}
+
+
+/*操作符样式*/
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    display: inline-block;
+    width: 20px;
+    padding-left: 5px;
+}

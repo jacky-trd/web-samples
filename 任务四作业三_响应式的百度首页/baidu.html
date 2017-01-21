@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>百度一下，你就知道</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/baidu.css" />
+    <!-- 引入谷歌html5.js，让html5在ie浏览器中可用 -->
+    <!--[if IE]>
+    <script src="http://cdn.bootcss.com/html5shiv/r29/html5.js"></script>
+    <![endif]-->
+    <!-- IE8中样式有些变形，而且IE8不能单独在CSS里识别，所以用条件注释的形式微调样式 -->
+    <!--[if IE 8]>
+    <style>
+        .content input{
+            position:relative;
+            top:2px; 
+        }
+    </style>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--头部信息-->
+        <header class="large_screen">
+            <!--最右边的浮动菜单-->
+            <div class="more" onmouseover="this.className='more_over'" onmouseout="this.className='more_out'">
+                <p>更多产品</p>
+                <div class="menu">
+                    <hr/>
+                    <a class="menu_link" href="http://music.baidu.com/"><img class="menu_img" src="img/menu_icon_music.png" />音乐</a>
+                    <hr/>
+                    <a class="menu_link" href="http://image.baidu.com/"><img class="menu_img" src="img/menu_icon_pic.png" />图片</a>
+                    <hr/>
+                    <a class="menu_link" href="http://zhidao.baidu.com/"><img class="menu_img" src="img/menu_icon_knowledge.png" />知道</a>
+                    <hr/>
+                    <a class="menu_link" href="http://wenku.baidu.com/"><img class="menu_img" src="img/menu_icon_books.png" />文库</a>
+                    <hr/>
+                    <a class="menu_link" href="http://top.baidu.com/"><img class="menu_img" src="img/menu_icon_ranks.png" />风云榜</a>
+                    <hr/>
+                    <a class="menu_link" href="https://www.baidu.com/more/">全部产品>></a>
+                </div>
+            </div>
+            <!--头部其它连接-->
+            <nav>
+                <a href="http://www.nuomi.com/?cid=002540">糯米</a>
+                <a href="http://news.baidu.com/">新闻</a>
+                <a href="http://www.hao123.com/">hao123</a>
+                <a href="http://map.baidu.com/">地图</a>
+                <a href="http://v.baidu.com/">视频</a>
+                <a href="http://tieba.baidu.com/">贴吧</a>
+                <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登陆</a>
+                <a href="javascript:;">设置</a>
+            </nav>
+        </header>
+        <!--主体部分-->
+        <div class="content">
+            <img class="weather" src="img/weather.png">
+            <a class="login_link" href="http://wappass.baidu.com/passport/?login&tpl=wimn&ssid%3D0%26amp%3Bfrom%3D%26amp%3Buid%3D%26amp%3Bpu%3Dsz%2540224_220%252Cta%2540iphone___3_537%26amp%3Bbd_page_type%3D1&tn=&regtype=1&u=https%3A%2F%2Fm.baidu.com"><img class="login_icon" src="img/login.png"></a>
+            <a class="skin_link" href="javascript:;"><img class="skin_icon" src="img/skin.png"></a>
+            <img class="logo" src="img/bd_logo.png" alt="百度一下">
+            <img class="logo logo_sm_screen" src="img/plus_logo.png" alt="百度一下">
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <input class="search" type="text" name="wd">
+                <img class="camera" src="img/camera_untouch.png" onmouseover="this.src='img/camera_touch.png'" onmouseout="this.src='img/camera_untouch.png'" />
+                <button class="submit" type="submit">百度一下</button>
+            </form>
+            <div class="mobiel_bar">
+                <div class="mobile_link_wrapper">
+                    <a class="mobile_bar_link" href="https://www.baidu.com/more/">
+                        <i class="mobile_bar_icon icon_focus"></i>
+                        <span class="mobile_bar_text">关注</span>
+                    </a>
+                </div>
+                <div class="mobile_link_wrapper">
+                    <a class="mobile_bar_link" href="http://m.news.baidu.com/news?fr=mohome&ssid=0&from=844b&uid=&pu=sz%40320_1001%2Cta%40iphone_2_5.0_3_537&bd_page_type=1">
+                        <i class="mobile_bar_icon icon_news"></i>
+                        <span class="mobile_bar_text">新闻</span>
+                    </a>
+                </div>
+                <div class="mobile_link_wrapper">
+                    <a class="mobile_bar_link" href="http://dushu.baidu.com">
+                        <i class="mobile_bar_icon icon_novel"></i>
+                        <span class="mobile_bar_text">小说</span>
+                    </a>
+                </div>
+                <div class="mobile_link_wrapper">
+                    <a class="mobile_bar_link" href="http://video.m.baidu.com/?from=wise_nav">
+                        <i class="mobile_bar_icon icon_video"></i>
+                        <span class="mobile_bar_text">视频</span>
+                    </a>
+                </div>
+                <div class="mobile_link_wrapper">
+                    <a class="mobile_bar_link" href="https://m.nuomi.com/?cid=wise_shouye_nuomi">
+                        <i class="mobile_bar_icon icon_rice"></i>
+                        <span class="mobile_bar_text">糯米</span>
+                    </a>
+                </div>
+                <div class="mobile_link_wrapper">
+                    <a class="mobile_bar_link" href="http://map.baidu.com/mobile/webapp/index/index?itj=45&wtj=wi&ssid=0&from=844b&uid=&pu=sz%40320_1001%2Cta%40iphone_2_5.0_3_537&bd_page_type=1">
+                        <i class="mobile_bar_icon icon_map"></i>
+                        <span class="mobile_bar_text">地图</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile_news_list">
+                <div class="news">
+                    <div class="news_text_wrapper">
+                        <span class="news_text_top">明星们的身高</span>
+                    </div>
+                    <div class="news_image_wrapper">
+                        <img class="news_image" src="img/news_1_1.JPEG" />
+                        <img class="news_image" src="img/news_1_2.JPEG" />
+                        <img class="news_image" src="img/news_1_3.JPEG" />
+                    </div>
+                    <div class="news_text_wrapper">
+                        <span class="news_text_bottom">来自新浪娱乐&nbsp;10/10</span>
+                    </div>
+                </div>
+                <div class="hr_line"></div>
+                <div class="news">
+                    <div class="news_text_wrapper">
+                        <span class="news_text_top">复旦大学教授：不要对孩子让步</span>
+                    </div>
+                    <div class="news_image_wrapper">
+                        <img class="news_image" src="img/news_2_1.JPEG" />
+                        <img class="news_image" src="img/news_2_2.JPEG" />
+                        <img class="news_image" src="img/news_2_3.JPEG" />
+                    </div>
+                    <div class="news_text_wrapper">
+                        <span class="news_text_bottom">来自新浪娱乐&nbsp;10/10</span>
+                    </div>
+                </div>
+                <div class="hr_line"></div>
+                <div class="news">
+                    <div class="news_text_wrapper">
+                        <span class="news_text_top">猜成语</span>
+                    </div>
+                    <div class="news_image_wrapper">
+                        <img class="news_image" src="img/news_3_1.JPEG" />
+                        <img class="news_image" src="img/news_3_2.JPEG" />
+                        <img class="news_image" src="img/news_3_3.JPEG" />
+                    </div>
+                    <div class="news_text_wrapper">
+                        <span class="news_text_bottom">来自搜狐教育&nbsp;10/10</span>
+                    </div>
+                </div>
+                <div class="hr_line"></div>
+                <div class="news">
+                    <div class="news_text_wrapper">
+                        <span class="news_text_top">旅游局公布最差景区</span>
+                    </div>
+                    <div class="news_image_wrapper">
+                        <img class="news_image" src="img/news_4_1.JPEG" />
+                        <img class="news_image" src="img/news_4_2.JPEG" />
+                        <img class="news_image" src="img/news_4_3.JPEG" />
+                    </div>
+                    <div class="news_text_wrapper">
+                        <span class="news_text_bottom">来自凤凰财经&nbsp;10/10</span>
+                    </div>
+                </div>
+                <div class="foot_wrapper">
+                    <table class="footer_table sm_footer_table">
+                        <tr>
+                            <td>
+                                <a class="user_feedback_link" href="http://ufosdk.baidu.com/?m=Client&a=commonsubmit&appid=517&activityId=1&needEmail=false&bw=005D16505DBD2C620255829471F87751&kw=&tn=iphone&pageid=6">
+                                    <img class="user_feedback_icon" src="img/download.png" />
+                                    <span class="user_feedback_text">用户反馈</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://www.baidu.com/duty/wise/wise_index.html">
+                                    <span class="user_feedback_text">使用百度前必读&nbsp;Baidu&nbsp;京ICP证030173号</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">
+                                    <img class="user_feedback_icon" src="img/icon_police.png" />
+                                    <span class="user_feedback_text">京公网安备11000002000001号</span>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--底部信息-->
+        <footer>
+            <div>
+                <table class="footer_table">
+                    <tr>
+                        <td rowspan="3">
+                            <img src="img/baidu_nuomi.png" />
+                        </td>
+                        <td rowspan="3">
+                            <label class="footer_lable_code">
+                                <font class="footer_table_font">手机百度</font>
+                                <br/>快人一步</label>
+                        </td>
+                        <td rowspan="3">
+                            <img src="img/baidu_mobile_app.png" style="margin-left:30px;" />
+                        </td>
+                        <td rowspan="3">
+                            <label class="footer_lable_code">
+                                <font class="footer_table_font">手机糯米</font>
+                                <br/>一元大餐</label>
+                        </td>
+                        <td class="footer_table_td ">
+                            <a class="footer_table_a " href="https://www.baidu.com/cache/sethelp/help.html ">把百度设为首页</a>
+                            <a class="footer_table_a " href="http://home.baidu.com/ ">关于百度</a>
+                            <a class="footer_table_a " href="http://ir.baidu.com/ ">About Baidu</a>
+                            <a class="footer_table_a " href="http://e.baidu.com/?refer=888 ">百度推广</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footer_table_td sm_foot">
+                            <label class="footer_label_feedback ">©2016 Baidu <a href="http://www.baidu.com/duty/ ">使用百度前必读</a>&nbsp;&nbsp;&nbsp;<a href="http://jianyi.baidu.com/ ">意见反馈</a>&nbsp;&nbsp;&nbsp;京ICP证030173号</label>
+                            <img class="footer_icon_feedback " src="img/copy_right.png " />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footer_table_td sm_foot">
+                            <img class="footer_icon_security " src="img/security.png " />
+                            <label>京公网安备11000002000001号</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

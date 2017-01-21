@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>计算器</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+</head>
+
+<body>
+	<!-- 计算器标题 -->
+	<h1>网络计算器</h1>
+    <div class="stage">        
+        <table>
+            <tr>
+                <td colspan="5">
+					<div>
+						<div class="output-container">
+							<!-- 计算器输出 -->
+							<span class="output" id="output">0</span>	
+							<!-- 存储指示 -->
+							<label class="save-indicator" id="save-indicator">M</label>
+						</div>
+					</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                	<!-- 重置按钮 -->
+					<div class="key-container">
+						<span class="key func-key" id="reset">重置</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 清屏按钮 -->
+					<div class="key-container">						
+						<span class="key func-key" id="clear-screen">清屏</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 存储按钮 -->
+					<div class="key-container">						
+						<span class="key func-key" id="save">存储</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 取存按钮 -->
+					<div class="key-container">						
+						<span class="key func-key" id="restore">取存</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 取反按钮 -->
+					<div class="key-container">					
+						<span class="key complex-calc-key" id="opposite">&plusmn;</span>
+					</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                	<!-- 按键7 -->
+					<div class="key-container">
+						<span class="key number-key" id="seven">7</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 按键8 -->
+					<div class="key-container">
+						<span class="key number-key" id="eight">8</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 按键9 -->
+					<div class="key-container">
+						<span class="key number-key" id="nine">9</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 除号 -->
+					<div class="key-container">
+						<span class="key basic-calc-key" id="divide">&divide;</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 倒数按钮 -->
+					<div class="key-container">
+						<span class="key complex-calc-key" id="reciprocal">1/x</span>						
+					</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                	<!-- 按键4 -->
+					<div class="key-container">
+						<span class="key number-key" id="four">4</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 按键5 -->
+                	<div class="key-container">
+						<span class="key number-key" id="five">5</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 按键6 -->
+                	<div class="key-container">
+						<span class="key number-key" id="six">6</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 乘法按钮 -->
+                	<div class="key-container">
+						<span class="key basic-calc-key" id="multiply">&times;</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 开方按钮 -->
+                	<div class="key-container">
+						<span class="key complex-calc-key" id="radic">&radic;</span>						
+					</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                	<!-- 按键1 -->
+                	<div class="key-container">
+						<span class="key number-key" id="one">1</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 按键2 -->
+                	<div class="key-container">
+						<span class="key number-key" id="two">2</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 按键3 -->
+                	<div class="key-container">
+						<span class="key number-key" id="three">3</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 减号 -->
+                	<div class="key-container">
+						<span class="key basic-calc-key" id="minuse">-</span>						
+					</div>
+                </td>
+                <td rowspan="2">
+                	<!-- 等号 -->
+                	<div class="key-container">
+						<span class="key complex-calc-key two-rows-key" id="equal">=</span>						
+					</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                	<!-- 按键0 -->
+                	<div class="key-container">
+						<span class="key number-key two-cols-key" id="zero">0</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 小数点 -->
+                	<div class="key-container">
+						<span class="key number-key" id="point">.</span>						
+					</div>
+                </td>
+                <td>
+                	<!-- 加号 -->
+                	<div class="key-container">
+						<span class="key basic-calc-key" id="plus">+</span>						
+					</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="js/change-style.js"></script>
+    <script type="text/javascript" src="js/calculate.js"></script>
+</body>
+
+</html>

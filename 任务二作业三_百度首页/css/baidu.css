@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    font: 12px arial;
+}
+
+
+/*头部信息样式*/
+
+header {
+    overflow: hidden;
+}
+
+header nav {
+    position: absolute;
+    width: 400px;
+    float: right;
+    margin-top: 16px;
+    right: 80px;
+}
+
+header nav a {
+    margin-left: 15px;
+    font-size: 13px;
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+header nav a:hover {
+    color: rgb(0, 0, 255);
+}
+
+
+/*以下为头部浮动菜单样式*/
+
+.more {
+    background: rgb(51, 136, 255);
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin: 15px 0 0 0px;
+    right: 10px;
+    display: block-inline;
+    width: 60px;
+    height: 23px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.more p {
+    margin: 0 0 0 0;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background: rgb(240, 240, 240);
+    height: 98%;
+    width: 80px;
+}
+
+.more:hover .menu {
+    display: block;
+}
+
+.more:hover {
+    background: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    margin-top: 0;
+    height: 98%;
+    width: 80px;
+    right: 0;
+}
+
+.more:hover p {
+    margin-top: 10px;
+}
+
+hr {
+    position: relative;
+    margin: 0px;
+    height: 1px;
+    width: 80%;
+    left: 10px;
+    border: 0;
+    background-color: rgb(225, 225, 225);
+    color: rgb(225, 225, 225);
+}
+
+img.menu_img {
+    position: relative;
+    display: block;
+    left: 20px;
+    margin: 10px 0 0 0;
+}
+
+a.menu_link {
+    position: relative;
+    display: block;
+    color: rgb(102, 102, 102);
+    margin: 10px 0 10px 0;
+}
+
+
+/*主体部分样式*/
+
+.content {
+    text-align: center;
+    padding-top: 12%;
+}
+
+.content img.logo {
+    width: 270px;
+    height: 129px;
+    padding-bottom: 20px;
+}
+
+.content input {
+    width: 510px;
+    height: 32px;
+    outline: none;
+    margin-right: 0;
+    border-top: 1px solid #b6b6b6;
+    border-left: 1px solid #b6b6b6;
+    border-bottom: 1px solid #b6b6b6;
+    text-indent: 1em;
+    padding-right: 30px;
+}
+
+.camera {
+    position: relative;
+    z-index: 1;
+    right: 60px;
+    top: 5px;
+    margin-top: -5px;
+    height: 16px;
+    width: 18px;
+    top: 5px;
+    left: -30px;
+}
+
+.camera:hover {
+    cursor: pointer;
+}
+
+.content input:hover {
+    border-top: 1px solid #9f9f9f;
+    border-left: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+    outline: none;
+}
+
+.content input:focus {
+    border-top: 1px solid rgb(71, 145, 255);
+    border-left: 1px solid rgb(71, 145, 255);
+    border-bottom: 1px solid rgb(71, 145, 255);
+    outline: none;
+}
+
+.content button {
+    position: relative;
+    width: 100px;
+    height: 36px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: rgb(51, 136, 255);
+    outline: medium;
+    cursor: pointer;
+    border: 0;
+    top: 1px;
+    margin-left: -25px;
+}
+
+
+/*底部信息样式*/
+
+footer {
+    position: absolute;
+    padding-top: 50px;
+    width: 100%;
+    bottom: 50px;
+}
+
+footer div {
+    text-align: center;
+}
+
+table.footer_table {
+    color: #9f9f9f;
+    margin: auto;
+}
+
+table.footer_table a {
+    color: #9f9f9f;
+    margin-right: -6px;
+}
+
+.footer_table_a {
+    margin-left: 30px;
+}
+
+.footer_table_font {
+    font-weight: bold;
+    color: #6f6f6f;
+}
+
+.footer_lable_code {
+    line-height: 2em;
+}
+
+.footer_label_feedback {
+    margin-left: 30px;
+    line-height: 2em;
+    margin-right: -3px;
+}
+
+.footer_icon_feedback {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.footer_table_td {
+    text-align: left;
+}
+
+.footer_icon_security {
+    vertical-align: middle;
+    margin-left: 30px;
+}

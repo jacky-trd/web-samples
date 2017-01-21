@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8" />
+    <title>Bootstrap后台管理系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css" />
+    <script src="js/jquery.js"></script>
+    <link rel="shortcut icon" href="img/tab_icon.png" />
+</head>
+
+<body>
+    <!-- 页面顶部 -->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip" style="margin-left:10px; margin-right:-10px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- 极客logo -->
+            <a class="navbar-brand" href="index.html"> <img alt="极客学院 Logo" src="img/logo.png" class="hidden-xs" />
+                <span>极客学院</span></a>
+            <ul style="list-style:none;">
+                <li>
+                    <form class="navbar-search pull-left hidden-xs">
+                        <!-- 搜索框 -->
+                        <input placeholder="Search" class="form-control col-lg-10" name="query" type="text">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ch-container">
+        <div class="row">
+            <!-- 左侧导航栏 -->
+            <div class="col-sm-2 col-lg-2">
+                <div class="sidebar-nav">
+                    <div class="nav-canvas">
+                        <ul class="nav nav-pills nav-stacked main-menu">
+                            <li class="nav-header">导航栏</li>
+                            <li><a href="basicinfo.html"><i class="glyphicon glyphicon-home"></i><span>&nbsp;基本信息</span></a></li>
+                            <li><a href="student.html"><i class="glyphicon glyphicon-eye-open"></i><span>&nbsp;学生档案</span></a></li>
+                            <li><a href="chart.html"><i class="glyphicon glyphicon-list-alt"></i><span>&nbsp;图表数据</span></a></li>
+                            <li class="active"><a href="typography.html"><i class="glyphicon glyphicon-font"></i><span>&nbsp;公告发布</span></a></li>
+                            <li><a href="gallery.html"><i class="glyphicon glyphicon-picture"></i><span>&nbsp;相册管理</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-sm-10">
+                <!-- 顶部导航栏 -->
+                <div>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#">主页</a>
+                        </li>
+                        <li>
+                            <a href="#">公告发布</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 极客学院公告 -->
+                <div class="row">
+                    <div class="box col-md-9">
+                        <div class="box-inner">
+                            <div class="box-header well" data-original-title="">
+                                <h2><i class="glyphicon glyphicon-font"></i>&nbsp;公告发布</h2>
+                                <div class="box-icon">
+                                    <a href="#" class="btn btn-setting btn-round btn-default"><i class="glyphicon glyphicon-cog"></i></a>
+                                    <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                                    <a href="#" class="btn btn-close btn-round btn-default"><i class="glyphicon glyphicon-remove"></i></a>
+                                </div>
+                            </div>
+                            <div class="box-content">
+                                <div class="page-header">
+                                    <h1>极客学院公告<br><small>关于十一国庆放假的通知</small></h1>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-lg-12">
+                                        <h4>通知内容</h4>
+                                        <p>
+                                            Hi，亲爱的极客童鞋们：
+                                        </p>
+                                        <p>
+                                            万里晴空，壮丽山河，赤旗飘扬。看九州方圆，普天同庆；江河歌唱，遍地流芳。为了祖国更加繁荣昌盛，为了更好的为我们共同的母亲庆生。极客学院特签署第一号文件：
+                                        </p>
+                                        <p>
+                                            2016年9月30日21：00-2016年10月8日9：00期间，学习倒计时时间暂停，任务时间顺延，总学习时长不变。希望来自五湖四海视学习为生命的极客童鞋们，在假期里依然可以为中华之崛起而撸代码，发假期间如有作业批改及任务通关，或许因为正在为我们伟大的母亲庆生，我们不能承诺及时服务。
+                                        </p>
+                                        <p>
+                                            最后极客学院的全体老师祝各位童鞋，国庆节快乐，为做好共产主义接班人奋斗终生！
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/charisma.js"></script>
+</body>
+
+</html>

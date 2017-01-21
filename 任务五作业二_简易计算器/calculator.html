@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <span>请输入操作数与操作符</span>
+        <div>
+            <!-- 第一个操作数 -->
+            <input id="number-one" type="text">
+            <!-- 操作符 -->
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <!-- 第二个操作数 -->
+            <input id="number-two" type="text">
+            <span>=</span>
+            <span id="result" class="result"></span>
+        </div>
+        <div>
+            <!-- 点击按钮，显示结果 -->
+            <button class="calc" onclick="calculate()">计算</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/calc.js"></script>
+</body>
+
+</html>

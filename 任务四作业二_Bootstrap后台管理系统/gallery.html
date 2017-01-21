@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8" />
+    <title>Bootstrap后台管理系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css" />
+    <script src="js/jquery.js"></script>
+    <link rel="shortcut icon" href="img/tab_icon.png" />
+</head>
+
+<body>
+    <!-- 页面顶部 -->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-inner">
+            <button type="button" class="navbar-toggle pull-left animated flip" style="margin-left:10px; margin-right:-10px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- 极客logo -->
+            <a class="navbar-brand" href="index.html"> <img alt="极客学院 Logo" src="img/logo.png" class="hidden-xs" />
+                <span>极客学院</span></a>
+            <ul style="list-style:none;">
+                <li>
+                    <form class="navbar-search pull-left hidden-xs">
+                        <!-- 搜索框 -->
+                        <input placeholder="Search" class="form-control col-lg-10" name="query" type="text">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ch-container">
+        <div class="row">
+            <!-- 左侧导航栏 -->
+            <div class="col-sm-2 col-lg-2">
+                <div class="sidebar-nav">
+                    <div class="nav-canvas">
+                        <ul class="nav nav-pills nav-stacked main-menu">
+                            <li class="nav-header">导航栏</li>
+                            <li><a href="basicinfo.html"><i class="glyphicon glyphicon-home"></i><span>&nbsp;基本信息</span></a></li>
+                            <li><a href="student.html"><i class="glyphicon glyphicon-eye-open"></i><span>&nbsp;学生档案</span></a></li>
+                            <li><a href="chart.html"><i class="glyphicon glyphicon-list-alt"></i><span>&nbsp;图表数据</span></a></li>
+                            <li><a href="typography.html"><i class="glyphicon glyphicon-font"></i><span>&nbsp;公告发布</span></a></li>
+                            <li class="active"><a href="gallery.html"><i class="glyphicon glyphicon-picture"></i><span>&nbsp;相册管理</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-sm-10">
+                <!-- 顶部导航栏 -->
+                <div>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#">主页</a>
+                        </li>
+                        <li>
+                            <a href="#">相册管理</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 相册 -->
+                <div class="row">
+                    <div class="box col-lg-12">
+                        <div class="box-inner">
+                            <div class="box-header well" data-original-title="">
+                                <h2><i class="glyphicon glyphicon-picture"></i>&nbsp;相册管理</h2>
+                                <div class="box-icon">
+                                    <a href="#" class="btn btn-setting btn-round btn-default"><i class="glyphicon glyphicon-cog"></i></a>
+                                    <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                                    <a href="#" class="btn btn-close btn-round btn-default"><i class="glyphicon glyphicon-remove"></i></a>
+                                </div>
+                            </div>
+                            <div class="box-content">
+                                <br>
+                                <ul class="thumbnails">
+                                    <li id="image-1" class="thumbnail">
+                                        <a href="#"><img class="gallary-img" src="img/creator.png" alt="创始人" /></a>
+                                    </li>
+                                    <li id="image-2" class="thumbnail">
+                                        <a href="#"><img class="gallary-img" src="img/creator_1.png" alt="创始人" /></a>
+                                    </li>
+                                    <li id="image-8" class="thumbnail">
+                                        <a href="#"><img class="gallary-img" src="img/prize_5.jpg" alt="获奖" /></a>
+                                    </li>
+                                    <li id="image-9" class="thumbnail">
+                                        <a href="#"><img class="gallary-img" src="img/prize_6.jpg" alt="获奖" /></a>
+                                    </li>
+                                    <li id="image-10" class="thumbnail">
+                                        <a href="#"><img class="gallary-img" src="img/prize_7.jpg" alt="获奖" /></a>
+                                    </li>
+                                    <li id="image-11" class="thumbnail">
+                                        <a href="#"><img class="gallary-img" src="img/prize_8.jpg" alt="获奖" /></a>
+                                    </li>
+                                </ul>
+                                <ul class="thumbnails">
+                                    <li id="image-5" class="thumbnail">
+                                        <a href="#"><img class="gallary-img" src="img/prize_2.jpg" alt="获奖" /></a>
+                                    </li>
+                                    <li id="image-6" class="thumbnail">
+                                        <a href="#"><img class="gallary-img" src="img/prize_3.jpg" alt="获奖" /></a>
+                                    </li>
+                                    <li id="image-7" class="thumbnail">
+                                        <a href="#"><img class="gallary-img" src="img/prize_4.jpg" alt="获奖" /></a>
+                                    </li>
+                                </ul>
+                                <ul class="thumbnails">
+                                    <li id="image-3" class="thumbnail">
+                                        <a href="#"><img class="gallary-img" src="img/prize.jpg" alt="获奖" /></a>
+                                    </li>
+                                    <li id="image-4" class="thumbnail">
+                                        <a href="#"><img class="gallary-img" src="img/prize_1.jpg" alt="获奖" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/charisma.js"></script>
+</body>
+
+</html>
