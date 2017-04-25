@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial;
+    min-width: 1016px;
+}
+
+nav{
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+}
+
+.weather{
+    font-size: 12px;
+    margin:8px 0 8px 15px;
+    color: #555;
+    display: inline-block;
+}
+
+.weather-status{
+    color: #38f;
+    font-weight: bold;
+}
+
+nav .menu{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.menu a{
+    color: #555;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.menu .more{
+    width: 86px;
+    height: 32px;
+    line-height: 32px;
+    color: white;
+    background: #398bfb;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #398bfb;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+}
+
+.middle-body{
+    width: 100%;
+    text-align: center;
+}
+
+.input-sec{
+    margin-top: 50px;
+}
+
+.input-sec img{
+    width: 270px;
+    height: 129px;
+}
+
+.input-sec .camera{
+    background: url("../res/camera.png") 0 0 no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: -37px;
+    margin-right: -24px;
+    top: 6px;
+}
+
+.input-sec .camera:hover{
+    background-position: 0 -20px;
+}
+
+.input-sec .text{
+    height: 20px;
+    padding: 9px 7px;
+    font-size: 16px;
+    border: 1px solid #b8b8b8;
+    border-bottom: 1px solid #ccc;
+    border-right: 0;
+    vertical-align: top;
+    outline: none;
+    box-shadow: none;
+    width: 480px!important;
+    padding-right: 48px!important;
+}
+
+.input-sec .text:hover{
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.input-sec .text:focus{
+    border-top: 1px solid #38f;
+    border-left: 1px solid #38f;
+    border-bottom: 1px solid #38f;
+}
+
+.input-sec .submit{
+    cursor: pointer;
+    width: 102px;
+    height: 40px;
+    line-height: 38px;
+    padding: 0;
+    border: 0;
+    background: none;
+    background-color: #38f;
+    font-size: 16px;
+    color: white;
+    box-shadow: none;
+    font-weight: normal;
+    margin-left: -5px;
+}
+
+.input-sec .submit:hover{
+    background-color: #317ef3;
+    border-bottom: #2868c8;
+    box-shadow: 1px 1px 1px #ccc;
+}
